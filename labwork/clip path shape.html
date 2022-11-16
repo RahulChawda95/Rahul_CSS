@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Clip path shape</title>
+	<style type="text/css">
+		.a
+		{
+			height: 200px;
+			width: 300px;
+			background: #17202A;
+			margin: 100px auto;
+			clip-path: polygon(0 0, 100% 50%, 0 100%);
+		}
+		.b{
+			height: 300px;
+			width: 400px;
+			margin: 200px auto;
+			background: #5DADE2;
+			clip-path: polygon(50% 0%,100% 100%,0% 100% );
+
+		}
+		.c
+		{
+			height: 400px;
+			width: 400px;
+			background: #0B5345;
+			clip-path: polygon(50% 0%,100% 20%,100% 80%,50% 100%,0% 80%,0% 20%);
+
+		}
+		.d{
+			height: 400px;
+			width: 400px;
+			background: #17202A;
+			clip-path: polygon(50% 0%,75% 25%,100% 25%,85% 50%,100% 75%,75% 75%,50% 100%,25% 75%,0% 75%,15% 50%,0% 25%,25% 25%);
+		}
+	</style>
+</head>
+<body>
+	<pre>Triangle:	height: 200px;
+					width: 300px;
+					background: #17202A;
+					margin: 100px auto;
+					clip-path: polygon(0 0, 100% 50%, 0 100%);
+		}</pre>
+<div class="a"></div>
+<hr>
+Triangle:	height: 300px;
+			width: 400px;
+			margin: 200px auto;
+			background: #5DADE2;
+			clip-path: polygon(50% 0%,100% 100%,0% 100% );
+<div class="b"></div>
+<hr>
+<pre>Hexagone:	height: 400px;
+				width: 400px;
+				background: #0B5345;
+				clip-path: polygon(50% 0%,100% 20%,100% 80%,50% 100%,0% 80%,0% 20%);
+</pre>
+<div class="c"></div>
+<pre>
+	Star:height: 400px;
+			width: 400px;
+			background: #17202A;
+			clip-path: polygon(50% 0%,75% 25%,100% 25%,85% 50%,100% 75%,75% 75%,50% 100%,25% 75%,0% 75%,15% 50%,0% 25%,25% 25%);
+</pre>
+<div class="d">
+	
+</div>
+</body>
+</html>
