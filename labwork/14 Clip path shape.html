@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Clip path shape</title>
+	<style type="text/css">
+		.a
+		{
+			height: 200px;
+			width: 300px;
+			background: #17202A;
+			margin: 100px 200px;
+			clip-path: polygon(0 0, 100% 50%, 0 100%);
+		}
+		.b{
+			height: 300px;
+			width: 400px;
+			margin: 100px 200px;
+			background: #5DADE2;
+			clip-path: polygon(50% 0%,100% 100%,0% 100% );
+
+		}
+		.c
+		{
+			height: 400px;
+			width: 400px;
+			background: #0B5345;
+			margin:100px 200px;
+			clip-path: polygon(50% 0%,100% 20%,100% 80%,50% 100%,0% 80%,0% 20%);
+
+		}
+		.d{
+			height: 400px;
+			width: 400px;
+			background: #17202A;
+			margin: 100px 200px;
+			clip-path: polygon(50% 0%,75% 25%,100% 25%,85% 50%,100% 75%,75% 75%,50% 100%,25% 75%,0% 75%,15% 50%,0% 25%,25% 25%);
+		}
+		.e{
+			height: 200px;
+			width: 300px;
+			background: rgb(11, 83, 69);
+			margin: 100px 200px;
+			clip-path: polygon(20% 0%,80% 0%,100% 100%,0% 100%);
+		}
+		.f
+		{
+			height: 200px;
+			width: 300px;
+			background: rgb(41, 128, 185);
+			margin: 100px 200px;
+			clip-path: polygon(40% 0%,100% 0%,60% 100%,0% 100%);
+		}
+		.g{
+			height: 300px;
+			width: 200px;
+			background: #DE3163;
+			margin: 100px 200px;
+			clip-path: polygon(50% 0%,100% 100%,50% 65%,0% 100%);
+		}
+		.h{
+			height: 200px;
+			width: 400px;
+			margin: 100px 200px;
+			background: black;
+			clip-path: polygon(0% 0%,50% 50%,100% 0%,95% 100%,50% 50%,15% 100%);
+		}
+		.i{
+			height: 400px;
+			width: 300px;
+			margin: 100px 200px;
+			background: #6495ED;
+			clip-path: polygon(30% 0%,100% 0%,70% 50%,100% 100%,30% 100%,0% 50%);
+		}
+		.j
+		{
+			height: 400px;
+			width: 400px;
+			background: #1A5276;
+			margin: 100px 200px;
+			clip-path: polygon(50% 0%,65% 55%,100% 100%,50% 85%,0% 100%,35% 55%);
+		}
+		.k{
+			height: 300px;
+			width: 300px;
+			background: #17202A;
+			margin: 100px 200px;
+			clip-path: polygon(20% 0%,80% 0%,100% 20%,50% 100%,0% 20%);
+		}
+		.l{
+
+			height: 500px;
+			width: 300px;
+			background: linear-gradient(rgba(0,155,155,0.15),blACK) , url(https://images.squarespace-cdn.com/content/v1/54bdcba5e4b08f92b173441f/1492980835245-25LYZE96GXGM0194UELQ/designhexagon);
+			background-size: 100% 100%;
+			margin: 100px 200px;
+			background-repeat: no-repeat;
+			clip-path: polygon(0% 0%,60% 0%,100% 50%,60% 100%,0% 100%,45% 50%);
+	
+		
+		}
+		.m
+		{
+			height: 200px;
+			width: 400px;
+			background: rgb(21, 67, 96);
+			margin: 100px 200px;
+			clip-path: polygon(0% 25%,75% 25%,75% 0%,100% 50%,75% 100%,75% 75%,0 75%);
+		}
+		.n
+		{
+			height: 150px;
+			width: 200px;
+			margin: 100px 200px;
+			background: rgb(169, 50, 38);
+			clip-path: polygon(50% 0%,100% 25%,80% 100%,20% 100%,0% 25%);
+		}
+		.o
+		{
+			height: 150px;
+			width: 75px;
+			margin: 100px 200px;
+			background: rgb(11, 83, 69);
+			clip-path: polygon(50% 0%,100% 50%,50% 100%,0% 50%);
+		}
+		.p
+		{
+			height: 150px;
+			width: 80px;
+			background: rgb(27, 38, 49);
+			margin: 100px 200px;
+			clip-path: polygon(50% 0%,100% 20%,50% 100%,0% 20%);
+		}
+
+	</style>
+</head>
+<body>
+	<fieldset><legend>Input</legend>
+	<pre>1)Triangle:	height: 200px;
+					width: 300px;
+					background: #17202A;
+					margin: 100px 200px;
+					clip-path: polygon(0 0, 100% 50%, 0 100%);
+		</pre>
+	</fieldset>
+<fieldset>
+	<legend>Output</legend>
+	<div class="a"></div>
+</fieldset>
+<fieldset>
+	<legend>Input</legend>
+2)Triangle:	height: 300px;
+			width: 400px;
+			margin: 100px 200px;
+			background: #5DADE2;
+			clip-path: polygon(50% 0%,100% 100%,0% 100% );
+</fieldset>
+<fieldset>
+<legend>Output</legend>
+<div class="b"></div>
+</fieldset>
+<fieldset>
+	<legend>Input</legend>
+<pre>3)Hexagone:	height: 400px;
+				width: 400px;
+				background: #0B5345;
+				margin:100px 200px;
+				clip-path: polygon(50% 0%,100% 20%,100% 80%,50% 100%,0% 80%,0% 20%);
+</pre>
+</fieldset>
+<fieldset>
+<legend>Output</legend>
+<div class="c"></div>
+</fieldset>
+<fieldset>
+	<legend>Input</legend>
+<pre>
+	4)Star:height: 400px;
+			width: 400px;
+			background: #17202A;
+			margin:100px 200px;
+			clip-path: polygon(50% 0%,75% 25%,100% 25%,85% 50%,100% 75%,75% 75%,50% 100%,25% 75%,0% 75%,15% 50%,0% 25%,25% 25%);
+</pre>
+</fieldset>
+<fieldset>
+<legend>Output</legend>
+<div class="d">
+</div>
+</fieldset>
+<fieldset>
+	<legend>Input</legend>
+<pre>5)Trapazoid:height: 200px;
+			width: 300px;
+			background: rgb(11, 83, 69);
+			margin: 100px 200px;
+			clip-path: polygon(20% 0%,80% 0%,100% 100%,0% 100%);</pre>
+</fieldset>	
+<fieldset>
+<legend>Output</legend>
+<div class="e">
+	
+</div>
+</fieldset>
+<fieldset>
+	<legend>Input</legend>
+<pre>
+	6)parellogram:
+			height: 200px;
+			width: 300px;
+			background: rgb(41, 128, 185);
+			margin: 100px 200px;
+			clip-path: polygon(40% 0%,100% 0%,60% 100%,0% 100%);
+	
+</pre>
+</fieldset>
+<fieldset>
+<legend>Output</legend>
+<div class="f">
+</div>
+</fieldset>
+<fieldset>
+<pre>
+	<legend>Input</legend>
+	7)Concave Quadrilaterals:height: 300px;
+			width: 200px;
+			background: #DE3163;
+			margin: 100px 200px;
+			clip-path: polygon(50% 0%,100% 100%,50% 65%,0% 100%);
+</pre>
+</fieldset>
+<fieldset>
+<legend>Output</legend>
+<div class="g">
+	
+</div>
+</fieldset>
+<fieldset>
+	<legend>Input</legend>
+<pre>
+
+	8)Complex Quadrilateral:height: 200px;
+			width: 400px;
+			margin: 100px 200px;
+			background: black;
+			clip-path: polygon(0% 0%,50% 50%,100% 0%,95% 100%,50% 50%,15% 100%);
+</pre>
+</fieldset>
+<fieldset>
+<legend>Output</legend>
+<div class="h"></div>
+</fieldset>
+<fieldset>
+	<legend>Input</legend>
+<pre>
+	9)Irregular hexagon:height: 400px;
+			width: 300px;
+			margin: 100px 200px;
+			background: #6495ED;
+			clip-path: polygon(30% 0%,100% 0%,70% 50%,100% 100%,30% 100%,0% 50%);
+		
+</pre>
+</fieldset>
+<fieldset>
+<legend>Output</legend>
+<div class="i">
+	</div></fieldset>
+<fieldset>
+	<legend>Input</legend>
+	<pre>
+		10)concave equilateral hexagon:height: 400px;
+			width: 400px;
+			background: #1A5276;
+			margin: 100px 200px;
+			clip-path: polygon(50% 0%,65% 55%,100% 100%,50% 85%,0% 100%,35% 55%);
+	</pre>
+</fieldset>
+<fieldset>
+<legend>Output</legend>
+	<div class="j">
+		
+	</div>
+	</fieldset>
+	<fieldset>
+		<legend>Input</legend>
+	<pre>11)Diamond:height: 300px;
+			width: 300px;
+			background: #17202A;
+			margin: 100px 200px;
+			clip-path: polygon(20% 0%,80% 0%,100% 20%,50% 100%,0% 20%);</pre>
+		</fieldset>
+		<fieldset><legend>Output</legend>
+	<div class="k">
+		
+	</div></fieldset>
+<fieldset>
+		<legend>Input</legend>
+		<pre>
+			syntex:
+			.l
+			{
+
+			height: 500px;
+			width: 300px;
+			background: linear-gradient(rgba(0,155,155,0.15),blACK) , url(https://images.squarespace-cdn.com/content/v1/54bdcba5e4b08f92b173441f/1492980835245-25LYZE96GXGM0194UELQ/designhexagon);
+			background-size: 100% 100%;
+			margin: 100px 200px;
+			background-repeat: no-repeat;
+			clip-path: polygon(0% 0%,60% 0%,100% 50%,60% 100%,0% 100%,45% 50%);
+		}
+		</pre>
+</fieldset>
+<fieldset>
+	<legend>Output</legend>
+	<div class="l">
+		
+	</div>
+</fieldset>
+<fieldset>
+	<legend>Input</legend>
+	<pre>
+		1)Arrow:
+			height: 200px;
+			width: 400px;
+			background: rgb(21, 67, 96);
+			margin: 100px auto;
+			clip-path: polygon(0% 25%,75% 25%,75% 0%,100% 50%,75% 100%,75% 75%,0 75%);
+	</pre>
+</fieldset>
+<fieldset>
+	<legend>Output</legend>
+<div class="m">
+	
+</div>
+</fieldset>
+<fieldset>
+	<legend>Input</legend>
+<pre>
+		2)pantagon:
+			height: 150px;
+			width: 200px;
+			margin: 100px 200px;
+			background: rgb(169, 50, 38);
+			clip-path: polygon(50% 0%,100% 25%,80% 100%,20% 100%,0% 25%);
+		</pre>
+</fieldset>
+<fieldset>
+	<legend>Output</legend>
+<div class="n">
+	
+</div>
+</fieldset>
+<fieldset>
+	<legend>Input</legend>
+	<pre>
+	3)Rhombus:
+			height: 150px;
+			width: 75px;
+			margin: 100px 200px;
+			background: rgb(11, 83, 69);
+			clip-path: polygon(50% 0%,100% 50%,50% 100%,0% 50%);
+</pre>
+</fieldset>
+<fieldset>
+	<legend>Output</legend>
+<div class="o">
+	
+</div>
+</fieldset>
+<fieldset>
+	<legend>Input</legend>
+	<pre>
+	4)Kite:
+			height: 150px;
+			width: 80px;
+			background: rgb(27, 38, 49);
+			margin: 100px 200px;
+			clip-path: polygon(50% 0%,100% 20%,50% 100%,0% 20%);
+</pre>
+</fieldset>
+<fieldset>
+	<legend>Output</legend>
+<div class="p">
+	
+</div>
+</fieldset>
+</body>
+</html>
