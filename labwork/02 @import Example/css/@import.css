@@ -1,0 +1,15 @@
+div
+{
+	height: 300px;
+	width: 600px;
+	background: rgba(31, 97, 141, 0.55);
+	font-size: 45px;
+	font-weight: bold;
+	box-sizing: border-box;
+	padding: 100px 100px;
+
+	-webkit-text-stroke-color: blue; /*chrome,edge,safari*/
+	-webkit-text-stroke-width: 1px;
+	-moz-text-stroke-width: 1px;/*firefox*/
+	-o-text-stroke-width: 1px;/*opera*/
+}
