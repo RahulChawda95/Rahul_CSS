@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Position property Absolute Relative</title>
+	<style type="text/css">
+		.a{
+			background: #3498DB;
+			height: 200px;
+			width: 300px;
+			font-size: 30px;
+			margin: 100px auto;
+			position: relative;
+		 }
+		 span
+		 {
+		 	position:absolute;
+		 	top: 50px;
+		 	left: 50px;
+		 }
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>Input</legend>
+		<pre>
+		Syntex:Inside Style tag
+		.a
+		{
+			background: #3498DB;
+			height: 200px;
+			width: 300px;
+			font-size: 30px;
+			margin: 100px auto;
+			position: relative;-----><b>always parent have to relative position:</b>
+		}
+		 span
+		 {
+		 	position:absolute;-----><b>always child have to absolute position:</b>
+		 	top: 50px;
+		 	left: 50px;
+		 }
+Inside Body or div tag syntex: This method like foreground image 
+&lt;div class="a">
+	&lt;img src="Image Link" height="100%" width="100%">-----> fit with div size
+	&lt;span>
+		Rahul
+	&lt;/span>
+&lt;/div>
+<b>NOTE:Foreground Image method but outer text move inside background image.
+span is inside div so we also known as div is parent and span is child.
+
+</b> 
+		</pre>
+	</fieldset>
+	<fieldset>
+		<legend>Output</legend>
+		<div class="a">
+	<img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201810/stockvault-person-studying-and-learning---knowledge-concept178241_0.jpeg?size=690:388" height="100%" width="100%">
+	<span>
+		Rahul
+	</span>
+</div>
+	</fieldset>
+
+</body>
+</html>
