@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Box_sizing</title>
+	<style type="text/css">
+		*{box-sizing: border-box;}
+		.r1
+		{
+			height: 300px;
+			width: 400px;
+			background: rgba(21, 67, 96, 0.35);
+			margin: 50px auto;
+			/*(margin to change box position)*/
+			padding: 150px 200px;
+			/*(padding to change font position)*/
+			box-sizing: border-box;
+		}
+		.r2
+		/*(For align text in center)*/
+		{
+			height: 250px;
+			width: 250px;
+			background: rgba(100, 30, 22, 0.45);
+			text-align: center;
+			line-height: 250px;
+			/*(take line height as per taking height)*/
+		}
+		.r3
+		{
+			height: 300px;
+			width: 300px;
+			margin: 100px auto;
+			background:radial-gradient(#3498DB,#16A085,#34495E);
+			border: 20px solid rgba(0, 0, 0, 0.1);
+		}
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>NOTE</legend>
+		<pre>
+			<b>*(Star) ==>* class for all below class in show effect(Universal)
+
+		{
+
+			
+			box-sizing: border-box;----->For div size box fix when doing margin or padding
+		}
+	</b>	
+		</pre>
+	
+	</fieldset>
+	<fieldset>
+		<legend>Input</legend>
+	<pre>
+		.r1
+		{
+			height: 300px;
+			width: 400px;
+			background: rgba(21, 67, 96, 0.35);
+			margin: 50px auto;
+			---->margin to change box position
+			padding: 150px 200px;
+			---->padding to change font position
+			box-sizing: border-box;
+		}
+	</pre>
+	</fieldset>
+	<fieldset>
+		<legend>Output</legend>
+		<div class="r1">
+	Rahul
+		</div>
+	</fieldset>
+<fieldset>
+	<legend>Input</legend>
+	<pre>
+		<b>For align text in center</b>
+		.r2
+		
+		{
+			height: 250px;
+			width: 250px;
+			background: rgba(100, 30, 22, 0.45);
+			text-align: center;
+			line-height: 250px;
+		---->take line height as per taking height
+		}
+	</pre>
+</fieldset>
+<fieldset>
+	<legend>Output</legend>
+	<div class="r2">
+	Rahul
+</div>
+</fieldset>
+<fieldset>
+	<legend>Input</legend>
+<pre>
+	<b>For trasparent border</b>
+	.r3
+		{
+			height: 300px;
+			width: 300px;
+			margin: 100px auto;
+			background:radial-gradient(#3498DB,#16A085,#34495E);
+			border: 20px solid rgba(0, 0, 0, 0.1);
+		}
+</pre>
+</fieldset>
+<fieldset>
+	<legend>Output</legend>
+	<div class="r3">
+	Rahul
+	</div>
+</fieldset>
+
+</body>
+</html>
