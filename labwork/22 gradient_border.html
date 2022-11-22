@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gradient Color Border</title>
+	<style type="text/css">
+		.c1
+		{
+			border: 20px solid rgba(27, 38, 49, 0.55);
+
+			background: #AED6F1;
+			padding: 20px 50px;
+			Border-image: linear-gradient(45deg,#0B5345,#154360,#17202A);
+			border-image-slice: 4%;
+		}
+	</style>
+</head>
+<body>
+<fieldset>
+	<legend>Input:Gradient color border</legend>
+	<pre>
+		Syntex:
+		.c1
+		{
+			border: 20px solid rgba(27, 38, 49, 0.55);
+
+			background: #AED6F1;
+			padding: 20px 50px;
+			Border-image: linear-gradient(45deg,#0B5345,#154360,#17202A);--->border color in linear gradient
+			border-image-slice: 4%;---> to Get full length of boder around paragraph
+		}
+	</pre>
+</fieldset>
+<fieldset>
+	<legend>Output</legend>
+	<div class="c1">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+</fieldset>
+</body>
+</html>
