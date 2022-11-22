@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>muilti background image</title>
+	<style type="text/css">
+		div
+		{
+			height: 500px;
+			background:url(https://www.codeur.com/tuto/wp-content/uploads/2021/05/zoom-950x500.jpg), 
+			url(https://www.codeur.com/tuto/wp-content/uploads/2021/01/important-950x500.jpg), 
+			url(https://www.codeur.com/tuto/wp-content/uploads/2021/12/diaporama-image.jpg), 
+			url(https://www.codeur.com/tuto/wp-content/uploads/2020/12/centre-img-1-950x500.jpg),
+			url(https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/08/What-is-Computer-Vision-scaled.jpg);
+			background-size: 150px 100px,150px 100px,150px 100px,150px 100px, 100% 100%;
+			background-repeat:no-repeat, no-repeat,no-repeat,no-repeat,no-repeat;
+			background-position:1100px 300px,100px 300px, 100px 70px,1100px 65px,left;
+		}
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>Input</legend>
+<pre>
+syntex:4-background image:
+div
+{
+<b>height: 500px;</b>-----height of background image
+<b>background:url(https://www.codeur.com/tuto/wp-content/uploads/2021/05/zoom-950x500.jpg),</b>-----sub image1 
+<b>url(https://www.codeur.com/tuto/wp-content/uploads/2021/01/important-950x500.jpg),</b>-----sub image2
+<b>url(https://www.codeur.com/tuto/wp-content/uploads/2021/12/diaporama-image.jpg),</b>-----sub image3
+<b>url(https://www.codeur.com/tuto/wp-content/uploads/2020/12/centre-img-1-950x500.jpg),</b>-----sub image4 
+
+<b>url(https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/08/What-is-Computer-Vision-scaled.jpg);</b>-----Main image
+
+1)background-size: sub image1(W H),sub image2(W H),sub image3(W H),sub image4(W H),Main Image(W H);-----W-width H-Height;100% 100% denoted fit to screen we pre define nackground height height: 
+
+<b>background-size: 150px 100px,150px 100px,150px 100px,150px 100px, 100% 100%;</b>
+
+<b>background-repeat:no-repeat, no-repeat,no-repeat,no-repeat,no-repeat;</b>-----sub or main image can repeat or not 
+
+2)background-position:sub image1(W H),sub image2(W H),sub image3(W H),sub image4(W H),Main Image(W H){left/right-fixed};
+
+<b>background-position:1100px 300px,100px 300px, 100px 70px,1100px 65px,left;</b>----set the sub/main background position in page,last main image position set or fix with left side
+}
+	</pre>	
+</fieldset>
+<fieldset>
+	<legend>Output</legend>
+	<div align="center">
+		<h2>4 Background</h2>
+	</div>
+</fieldset>
+</body>
+</html>
