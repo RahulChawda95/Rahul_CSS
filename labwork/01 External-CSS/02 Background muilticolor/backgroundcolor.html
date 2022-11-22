@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="background.css">
+</head>
+<body>
+	<fieldset>
+		<legend>Input From External css File</legend>
+		<pre>
+		<b>Inside Head tag</b>
+		&lt;link rel="stylesheet" type="text/css" href="background.css"&gt;
+		
+			From Background.css
+			<b>1)For single background color</b>
+			div
+			{
+			background: deepskyblue;
+			height: 300px;
+			width: 100%;
+			}
+			<b>2)For linear-gradient(Min.two color mix with them)-for horizontal/vertical form</b>
+			div
+			{
+			height: 300px;
+			width: 100%;
+			background: linear-gradient(red,blue,green,black,white);
+			}
+			<b>3)For radial-gradient(Min.two color mix with them)-circular form</b>
+			div
+			{
+			height: 400px;
+			width: 100%;
+			background: radial-gradient(red,orange,yellow,green,blue,indigo,violet);
+			}
+		
+			div
+			{
+			height: 400px;
+			width: 100%;
+			<b>1)linear-gradient color start from in sequance to top - bottom----horizontal work</b>
+
+			background: linear-gradient(to top,red,blue,green,yellow,black,deepskyblue);
+
+			<b>2)linear-gradient color start from in sequance to bottom - top----horizontal work</b>
+
+			background: linear-gradient(to bottom,red,blue,green,yellow,black,deepskyblue);
+
+			<b>3)linear-gradient color start from in sequance right side to left side</b>
+
+			background: linear-gradient(to right,red,blue,green,yellow,black,deepskyblue);
+
+			<b>4)linear-gradient color start from in sequance left side to right side</b>
+
+			background: linear-gradient(to left,red,blue,green,yellow,black,deepskyblue);
+
+			<b>5)linear-gradient color is incline with some degree</b>
+
+			background: linear-gradient(120deg,red,blue,green,yellow,black,deepskyblue);
+
+			background: linear-gradient(red 20%,blue 20%,green,yellow,black,deepskyblue);
+     
+}
+
+		</pre>
+	</fieldset>
+	<fieldset>
+		<legend>Output</legend>
+		<div></div>
+	</fieldset>
+
+</body>
+</html>
