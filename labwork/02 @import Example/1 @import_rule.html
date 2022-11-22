@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>@import Rule</title>
+	<link rel="stylesheet" type="text/css" href="css\\style.css">
+
+</head>
+<body>
+<pre>
+	<fieldset>
+		<legend>Input</legend>
+		External css file 
+		1)@import.css
+		Syntex:
+
+		div
+	{
+	height: 300px;
+	width: 600px;
+	background: rgba(31, 97, 141, 0.55);
+	font-size: 45px;
+	font-weight: bold;
+	box-sizing: border-box;
+	padding: 100px 100px;
+	--><b>For Only Text border use-text-stroke-color/width</b>
+
+	-webkit-text-stroke-color: blue;----->For chrome,edge,safari browser
+	-webkit-text-stroke-width: 1px;
+	-moz-text-stroke-width: 1px; ------>For firefox browser
+	-o-text-stroke-width: 1px;------> For opera browser
+	<b>Must write Before text stroke code</b>
+	1)-webkit-For chrome,edge,safari browser
+	2)-moz-For firefox browser
+	3)-o- For opera browser
+	}
+	2)style.css
+	Genral syntex:  @import"pathname/filename.type";*/
+		syntex:
+			@import "@import.css";
+	1)Main:@import_rule.html
+	syntex:
+	&lt;div&gt;
+	Rahul Chawda
+	&lt;/div&gt;
+
+
+
+	</fieldset>
+</pre>
+<fieldset>
+	<legend>Output</legend>
+	<div>
+	Rahul Chawda
+</div>
+</fieldset>
+
+</body>
+</html>
