@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Visibility,opacity,display Example</title>
+	<style type="text/css">
+		.c1{
+			height: 100px;
+			width: 100px;
+			background: lightskyblue;
+			visibility: hidden;
+
+		}
+		.c2{
+			height: 100px;
+			width: 100px;
+			background: lightblue;
+			visibility: visible;
+		}
+		.c3{
+			height: 100px;
+			width: 100px;
+			background: black;
+			opacity: 0;
+		}
+		.c4{
+			height: 100px;
+			width: 100px;
+			background: lightpink;
+			opacity: 1;
+		}
+		.c5
+		{
+			height: 100px;
+			width: 100px;
+			background: lightpink;
+			opacity: 0.4;
+
+		}
+		.c6
+		{
+			height: 100px;
+			width: 100px;
+			background: lightblue;
+			display: none;
+		}
+		.c7
+		{
+			height: 100px;
+			width: 100px;
+			background: lightblue;
+			display: block;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+<table border="1">
+	<th colspan="3">Visibility,opacity,display</th>
+	<tr>
+		<td rowspan="4"><h2>1)Visibility:</h2></td>
+		<td>1)Hidden:</td>
+		<td>syntex</td>
+		<td>Note:</td>
+
+	</tr>
+	<tr>
+		<td class="c1"></td>
+		<td>height: 100px;
+			width: 100px;
+			background: lightskyblue;
+			visibility: hidden;</td>
+			<td>hide contain and require space</td>
+	</tr>
+	<tr>
+		<td>2)visible:</td>
+		<td>syntex</td>
+	</tr>
+	<tr>
+		<td class="c2"></td>
+		<td>height: 100px;
+			width: 100px;
+			background: lightblue;
+			visibility: visible;</td>
+			<td>Visible contain</td>
+	</tr>
+	
+	<tr>
+		<td rowspan="4"><h2>2)Opcity:</h2></td>
+		<td>Opacity value-0</td>
+		<td>syntex</td>
+		<td>Note:</td>
+	</tr>
+	<tr>
+		<td class="c3"></td>
+		<td>height: 100px;
+			width: 100px;
+			background: black;
+			opacity: 0;</td>
+			<td>remove box and its required space</td>
+	</tr>
+	<tr>
+		<td class="c4"></td>
+		<td>height: 100px;
+			width: 100px;
+			background: black;
+			opacity: 1;</td>
+			<td>Visible in screen</td>
+	</tr>
+	<tr>
+		<td class="c5"></td>
+		<td>height: 100px;
+			width: 100px;
+			background: black;
+			opacity: 0.4;</td>
+			<td>in-between 0 to 1 value it blur contain</td>
+	</tr>
+	<tr>
+		<td rowspan="4"><h2>3)Display:</h2></td>
+		<td>1)none:</td>
+		<td>syntex</td>
+		<td>Note:</td>
+	</tr>
+	<tr>
+		<td class="c6"></td>
+		<td>box space in used Display-none function</td>
+		<td>height: 100px;
+			width: 100px;
+			background: lightblue;
+			display: block;</td>
+			<td>Entirely removes the element from the page. Note that while the element is still in the DOM, it is removed visually and any other conceivable way </td>
+	</tr>
+	<tr>
+		<td>2)block:</td>
+		<td>syntex</td>
+		<td></td>
+		
+	</tr>
+	<tr>
+		<td class="c7"></td>
+		
+		<td>height: 100px;
+			width: 100px;
+			background: lightblue;
+			display: block;</td>
+			<td>Visible in screen</td>
+	</tr>
+	
+
+</table>
+</body>
+</html>
