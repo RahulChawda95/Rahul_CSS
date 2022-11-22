@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hover Example</title>
+	<style type="text/css">
+	.a
+	{
+		height: 250px;
+		width: 400px;
+		background: url(https://www.slazzer.com/static/images/home-page/realestate-image-design-maker.jpg);
+		background-size: 120% 120%;
+		background-position: -40px 0;
+		display: block;
+		margin: 100px 100px;
+		border: 10px solid rgba(0, 0, 0, 0.6);
+		transition: 0.6s;
+		background-origin: border-box;
+	}
+	.a:hover
+	{
+		background-position: 0px 0;
+	}
+	.b
+		{
+		height: 250px;
+		width: 400px;
+		margin: 100px 200px;
+		background: url(https://learnopencv.com/wp-content/uploads/2021/04/image-15.png);
+		background-size: 120% 120%;
+		display: block;
+		background-position: -40px 0;
+		border: 10px solid rgba(0, 0, 0, 0.6 );
+		background-origin: border-box;
+		transition: 0.6s	;
+	}	
+	.b:hover
+	{
+		
+	background-position: 0px 0;
+		
+
+	}
+		
+	</style>
+	
+	
+</head>
+<body>
+	<fieldset>
+		<legend>Input</legend>
+		<pre>
+		.a
+	{
+		1)height: 250px;---div height
+
+		2)width: 400px;---div width
+
+		3)background: url(https://www.slazzer.com/static/images/home-page/realestate-image-design-maker.jpg);---image url
+
+		4)background-size: 120% 120%;---background size we require
+
+		5)background-position: -40px 0;---background position inside div
+
+		6)display: block;---show div contain or not
+
+		7)margin: 100px 100px;---margin from html page in x-axis y-axis
+
+		8)border: 10px solid rgba(0, 0, 0, 0.6);---border: size style color
+
+		9)transition: 0.6s;---smoothness of effect
+		
+		10)background-origin: border-box;---border can not overlap with image
+
+	}
+	.a:hover---when move curser and show effect
+	{
+		1)background-position: 0px 0;---background position change"-40px to 0px"
+	}
+</pre>
+	</fieldset>
+	<fieldset> 
+		<legend>Output</legend>
+<div class="a">
+</div>
+</fieldset>
+<fieldset>
+	<legend>Input</legend>
+<pre>
+.b
+	{
+	   height: 250px;
+	   width: 400px;
+	   margin: 100px 200px;
+	   background: url(https://learnopencv.com/wp-content/uploads/2021/04/image-15.png);
+	   background-size: 120% 120%;
+	   display: block;
+	   background-position: -40px 0;
+	   border: 10px solid rgba(0, 0, 0, 0.6 );
+	   background-origin: border-box;
+	   transition: 0.6s	;
+	}	
+	.b:hover
+	{
+	background-position: 0px 0;
+	}
+</pre>
+</fieldset>
+<fieldset>
+	<legend>Output</legend>
+	<div class="b">
+		
+	</div>
+</fieldset>
+
+</body>
+</html>
