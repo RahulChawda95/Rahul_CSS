@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Psuedo_Element</title>
+	<style type="text/css">
+		h1::first-letter
+		{
+			color:seagreen;
+		}
+		p::first-line
+		{
+			color: coral;
+		}
+		h3::after{
+			content: " ,How are you....!";
+		}
+		h4::before
+		{
+		 	content: "Hi...! ";
+		}
+		b::after
+		{
+			content:"\265B";
+		}
+		b::before
+		{
+			content: "\2711";
+		}
+		::selection
+		{
+			background:black;
+			color: yellow;
+		}
+
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>Input</legend>
+<pre><h3>Note:psuedo Element represent with " :: "</h3>
+<h2>1)first-letter:</h2> All h1 tag first latter are highlight with color:
+
+	syntex:h1::first-letter
+		{
+			color:seagreen;
+		}
+</fieldset>
+
+<fieldset>
+	<legend>Output</legend>
+	<h1>Rahul Chawda</h1>
+	<h1>Rahul Chawda</h1>
+	<h1>Rahul Chawda</h1>
+</pre>
+</fieldset>
+
+<fieldset>
+	<legend>Input</legend>
+<pre>
+<h2>2)First-line:</h2>
+paragraph first line(P-tag first line highlight with color)
+Syntex:p::first-line
+		{
+			color: coral;
+		}
+</pre></fieldset>
+<fieldset>
+	<legend>Output</legend>
+	<div>
+Example=<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+</fieldset>
+<fieldset>
+	<legend>Input</legend>
+<pre>
+<h2>3)after:</h2>
+Note:tag after insert pre define line/syntex add for using this element
+Syntex:h3::after
+		{
+			content: " ,How are you....!";
+		}
+</pre>
+</fieldset>
+<fieldset>
+	<legend>Output</legend>
+<h3>Rahul</h3>
+</fieldset>
+<fieldset>
+	<legend>Input</legend>
+<pre><h1>4)before:</h1>
+Note:tag contain before added pre define text/image.. for using this element
+syntex:h4::before
+		{
+		 	content: "Hi...! ";
+		}
+</pre></fieldset>
+<fieldset>
+	<legend>Output</legend>
+
+<h4>Rahul</h4></fieldset>
+<fieldset>
+	<legend>Input</legend>
+<pre>
+	<h1>5)CSS Entities-After/Before</h1>
+Note:tag contain After or before we are add small symbol(css entities)
+syntex:b::after
+		{
+			content:"\265B";=crown
+		}
+		b::before
+		{
+			content: "\2711";=white nib
+		}
+</fieldset>
+<fieldset>
+	<legend>Output</legend>
+	Example=<b>Rahul</b>
+</pre>
+</fieldset>
+
+<fieldset>
+	<legend>Input</legend>
+<pre>
+	<h1>6)Selection:</h1>
+	Note:For whole html page change selection background color(defult=skyblue)
+	syntex=
+	::selection
+		{
+			background: black;-text background
+			color: yellow;-font color
+		}
+</pre>
+</fieldset>
+
+</body>
+</html>
