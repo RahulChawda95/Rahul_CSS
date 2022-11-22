@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="foreground.css">
+</head>
+<body>
+	<fieldset>
+		<legend>Input</legend>
+		<pre>
+		<b>Image after text using this method:</b>
+		External css file syntex:
+		.foreground
+		{
+			height: 500px;
+			width: 600px;
+
+		}
+		From main html file:
+		 &lt;div class="foreground"> 
+	&lt;img src="https://wallpapershome.com/images/pages/pic_h/21486.jpg" height="300px" width="500px">Rahul===> 
+	this tag using foreground image(link after text) and height and width also given inside link
+	
+&lt;/div>
+</pre>
+	</fieldset>
+	<fieldset>
+		<legend>Output</legend>
+		<div class="foreground"> 
+	<img src="https://wallpapershome.com/images/pages/pic_h/21486.jpg" height="300px" width="500px">
+	Rahul
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>Input</legend>
+		<pre>
+		<b>Image Before text using this method:</b>
+		External css file syntex:
+		.foreground
+		{
+			height: 500px;
+			width: 600px;
+
+		}
+		From main html file:
+		 &lt;div class="foreground"> 
+		 Rahul
+	&lt;img src="https://wallpapershome.com/images/pages/pic_h/21486.jpg" height="300px" width="500px">===> 
+	this tag using foreground image(link Before text) and height and width also given inside link
+	
+&lt;/div>
+</pre>
+	</fieldset>
+	<fieldset>
+		<legend>Output</legend>
+		<div class="foreground"> 
+	Rahul
+	<img src="https://wallpapershome.com/images/pages/pic_h/21486.jpg" height="300px" width="500px">
+
+</div>
+	</fieldset>
+
+</body>
+</html>
