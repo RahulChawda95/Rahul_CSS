@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gradiant Fix Text</title>
+	<style type="text/css">
+		.r1
+		{
+			font-size: 250px;
+			height: 350px;
+			width: 600px;
+			background: linear-gradient(45deg,#7B241C,#154360,#6E2C00,#17202A);
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+		.r2
+		{
+			height: 350px;
+			width: 600px;
+			font-size: 250px;
+			background: url(https://rare-gallery.com/thumbs/560800-fractal-fractal.jpg);
+			background-size: 100% 100%;
+			-webkit-background-clip: text;
+			-moz-background-clip: text;
+			-o-background-clip: text;
+			color: transparent;
+		}
+
+
+	</style>
+</head>
+<body>
+<fieldset>
+	<legend>Input:Text with gradient </legend>
+<pre>
+	Syntext:
+	.r1
+		{
+			font-size: 250px;
+			height: 350px;
+			width: 600px;
+			background: linear-gradient(45deg,#7B241C,#154360,#6E2C00,#17202A);
+			-webkit-background-clip: text;---->remove outer background
+			color: transparent;---->text color
+		}
+</pre>
+</fieldset>
+<fieldset>
+	<legend>Output</legend>
+	<div class="r1">
+		Rahul
+	</div>
+</fieldset>
+<fieldset>
+	<legend>Input:text with fix background gradient color</legend>
+	<pre>
+		Syntex:
+		.r2
+		{
+			height: 350px;
+			width: 600px;
+			font-size: 250px;
+			background: url(https://rare-gallery.com/thumbs/560800-fractal-fractal.jpg);
+			background-size: 100% 100%;
+			-webkit-background-clip: text;
+			-moz-background-clip: text;
+			-o-background-clip: text;
+			color: transparent;
+		}
+	</pre>
+</fieldset>
+<fieldset>
+	<legend>Output</legend>
+	<div class="r2">
+		Rahul
+	</div>
+</fieldset>
+</body>
+</html>
