@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Border Image</title>
+	<style type="text/css">
+		.c1
+		{
+			background: rgba(20, 90, 50, 0.35);
+			border: 50px solid whitesmoke;
+			padding: 30px;
+			/*border-image: url(https://png.pngtree.com/png-clipart/20210108/ourmid/pngtree-gold-thailand-border-frame-thai-png-image_5829597.png) stretch 40%;*/
+			border-image: url(C:\\Users\\TOPS.DESKTOP-5AHM8D2\\Desktop\\border1.png) stretch 30%;
+		}
+		.c2
+		{
+			background: rgba(20, 90, 50, 0.35);
+			border: 50px solid whitesmoke;
+			padding: 30px;
+			/*border-image: url(https://png.pngtree.com/png-clipart/20210108/ourmid/pngtree-gold-thailand-border-frame-thai-png-image_5829597.png) round 30%;*/
+			border-image:url(C:\\Users\\TOPS.DESKTOP-5AHM8D2\\Desktop\\border1.png) round 10%;
+		}
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>Input:For Border image with stretch %</legend>
+		<pre>
+		Syntex:
+			.c1
+		{
+			background: rgba(20, 90, 50, 0.35);
+			border: 50px solid whitesmoke;
+			padding: 30px;
+			border-image: url(https://img.freepik.com/premium-vector/luxury-vintage-golden-frame-baroque-line-border_543062-2239.jpg?w=2000)
+			stretch 40%;--->
+			Stretch is defines how the edge regions and middle region of a source image are adjusted to fit the dimensions of an element's border image.
+		}
+		IF use Download file After remove background from removebg.com then syntex like:
+		--->border-image: border-image: url(C:\\Users\\TOPS.DESKTOP-5AHM8D2\\Desktop\\border1.png) stretch 30%;;	
+		</pre>
+	</fieldset>
+	<fieldset>
+		<legend>Output:For border Direct url\Path</legend>
+		<div class="c1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>Input:For Border image with Round</legend>
+		<pre>
+		.c2
+		{
+			background: rgba(20, 90, 50, 0.35);
+			border: 50px solid whitesmoke;
+			padding: 30px;
+
+			/*border-image: url(https://png.pngtree.com/png-clipart/20210108/ourmid/pngtree-gold-thailand-border-frame-thai-png-image_5829597.png) round 30%;*/
+
+			border-image:url(C:\\Users\\TOPS.DESKTOP-5AHM8D2\\Desktop\\border1.png) round 30%;
+		}
+		Note:This is the round property is repeating border after 10% so perfect fit with 30%	
+		</pre>
+	</fieldset>
+	<fieldset>
+		<legend>Output:For border Direct url/Path</legend>
+<div class="c2">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+	</fieldset>
+
+</body>
+</html>
