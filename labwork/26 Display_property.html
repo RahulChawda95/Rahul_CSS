@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Display property</title>
+	<style type="text/css">
+		.a,.b,.c,.d 
+		{
+			border: 2px solid;
+			padding: 30px;
+			display: inline;
+		}
+		.e,.f,.g,.h
+		{
+			border: 2px solid;
+			padding: 30px;
+			display: block;
+		}
+		.i,.j,.k,.l
+		{
+			border: 2px solid;
+			padding: 30px;
+			display: inline-block;
+		}
+
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>Input</legend>
+		<pre>
+	<b>1)Display:Inline</b> 
+	Inside style tag Syntex:
+		.a,.b,.c,.d
+		{
+			border: 2px solid;
+			padding: 30px;
+			display: inline;
+		}
+		Inside body tag syntex:
+		&lt;div class="a">
+	Garnd-parent
+	&lt;ul class="b"> Parent
+		&lt;li class="c">Son
+			&lt;span class="d">Span&lt;/span>
+		&lt;/li>
+	&lt;/ul>
+&lt;/div>
+Note:An element with a display property set to inline will not start on
+ a new line and it will take up the remaining/available screen width
+ It just takes up the space such an element would normally take.
+Because of this, you can't set the width and height of an element
+ that has a display of inline, becuase it does not take up the whole
+  screen width.Some elements are inline by default,
+   like &lt;span>, &lt;a>, &lt;i>, and &lt;img>.
+	</pre>
+</fieldset>
+<fieldset>
+	<legend>Output</legend>
+<div class="a">
+	Garnd-parent
+	<ul class="b"> Parent
+		<li class="c">Son
+			<span class="d">Span</span>
+		</li>
+	</ul>
+</div>
+</fieldset>
+<fieldset>
+		<legend>Input</legend>
+		<pre>
+	<b>2)Display:Block</b> 
+	Inside style tag Syntex:
+		.e,.f,.g,.h
+		{
+			border: 2px solid;
+			padding: 30px;
+			display: block;
+		}
+		Inside body tag syntex:
+		&lt;div class="e">
+	Garnd-parent
+	&lt;ul class="f"> Parent
+		&lt;li class="g">Son
+			&lt;span class="h">Span&lt;/span>
+		&lt;/li>
+	&lt;/ul>
+&lt;/div>
+Note:An element that has the display property set to block starts on 
+a new line and takes up the available screen width.
+You can specify the width and height properties for such elements.
+ Examples of elements that are at block-level 
+ by default are &lt;div>, &lt;section>, &lt;p>, and lots more.
+You can set the span from the previous HTML code to block display 
+and it will behave like a block-level element.
+</pre>
+</fieldset>
+<fieldset>
+	<legend>Output</legend>
+	<div class="e">
+	Garnd-parent
+	<ul class="f"> Parent
+		<li class="g">Son
+			<span class="h">Span</span>
+		</li>
+	</ul>
+</div>
+</fieldset>
+<fieldset>
+	<legend>Input</legend>
+	<pre>
+<b>3)Display:inline-Block</b> 
+	Inside style tag Syntex:
+		.i,.j,.k,.l
+		{
+			border: 2px solid;
+			padding: 30px;
+			display: block;
+		}
+		Inside body tag syntex:
+		&lt;div class="e">
+	Garnd-parent
+	&lt;ul class="f"> Parent
+		&lt;li class="g">Son
+			&lt;span class="h">Span&lt;/span>
+		&lt;/li>
+	&lt;/ul>
+&lt;/div>
+Note:An element you assign a display of inline-block is inline 
+by presentation.But it has the added advantage of we being able to
+apply width and height to it,which you can't do when the element is
+assigned a dispaly of inline.
+so,the inline-block display as an inline element and block element
+ in one package.
+</pre>
+</fieldset>
+<fieldset>
+	<legend>Output</legend>
+	<div class="i">
+	Garnd-parent
+	<ul class="j"> Parent
+		<li class="k">Son
+			<span class="l">Span</span>
+		</li>
+	</ul>
+</div>
+</fieldset>
+</body>
+</html>
