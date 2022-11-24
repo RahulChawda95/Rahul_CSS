@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Display flex</title>
+	<style type="text/css">
+		*{box-sizing: border-box;}
+		.main{
+			display: flex;
+
+		}
+		.main .a{
+			height: 150px;
+			width: 50%;
+			background: #154360;
+		}
+		.main .b{
+			height: 150px;
+			width: 50%;
+			background: #0B5345;
+		}
+		.sub1{
+			height: 150px;
+			width: 100%;
+			background: black;
+			display: flex;
+		}
+		.sub1 .c{
+			height: 150px;
+			width: 25%;
+			background: #4A235A;
+		}
+		.sub1 .d{
+			height: 150px;
+			width: 25%;
+			background: #641E16;
+		}
+		.sub1 .e{
+			height: 150px;
+			width: 25%;
+			background: #145A32;
+		}
+		.sub1 .f{
+			height: 150px;
+			width: 25%;
+			background: #7D6608;
+		}
+		.sub2{
+			height: 200px;
+			width: 100%;
+			background: #A3E4D7;
+			display: flex;
+		}
+		.sub2 .a{
+			height: 200px;
+			width: 12.5%;
+			background: #239B56;
+		}
+		.sub2 .b{
+			height: 200px;
+			width: 12.5%;
+			background:#BA4A00;
+		}
+		.sub2 .c{
+			height: 200px;
+			width: 12.5%;
+			background:#7B7D7D;
+		}
+		.sub2 .d{
+			height: 200px;
+			width: 12.5%;
+			background: #1B2631;
+		}
+		.sub2 .e{
+			height: 200px;
+			width: 12.5%;
+			background:#EC7063;
+		}
+		.sub2 .f{
+			height: 200px;
+			width: 12.5%;
+			background:#2980B9;
+		}
+		.sub2 .g{
+			height: 200px;
+			width: 12.5%;
+			background:#0E6655;
+		}
+		.sub2 .h{
+			height: 200px;
+			width: 12.5%;
+			background:#196F3D;
+
+		}
+		.sub2 .h .up1
+		{
+			height: 50px;
+			background: #7FB3D5;
+		}
+		.sub2 .h .up2
+		{
+			height: 50px;
+			background: #7DCEA0;
+		}
+		.sub2 .h .down1
+		{
+			height: 50px;
+			background: #D7DBDD;
+		}
+		.sub2 .h .down2
+		{
+			height: 50px;
+			background: #566573;
+		}
+
+		
+
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>Output</legend>
+		<div class="main">
+	<div class="a">Part1</div>
+	<div class="b">Part2</div>
+</div>
+<div class="sub1">
+	<div class="c">part1</div>
+	<div class="d">Part2</div>
+	<div class="e">Part3</div>
+	<div class="f">Part4</div>
+</div>
+<div class="sub2">
+	<div class="a">Part1</div>
+	<div class="b">Part2</div>
+	<div class="c">Part3</div>
+	<div class="d">Part4</div>
+	<div class="e">Part5</div>
+	<div class="f">Part6</div>
+	<div class="g">Part7</div>
+	<div class="h">
+		<div class="up1">up1</div>
+		<div class="up2">up2</div>
+		<div class="down1">Down1</div>
+		<div class="down2">Down2</div>
+	</div>
+</div>
+	</fieldset>
+	<fieldset>
+		<legend>Input</legend>
+		<pre>
+		Syntex:inside style tag
+		*{box-sizing: border-box;}
+		.main{
+			&lt;b>display: flex;&lt;/b>
+
+		}
+		.main .a{
+			height: 150px;
+			width: 50%;
+			background: #154360;
+		}
+		.main .b{
+			height: 150px;
+			width: 50%;
+			background: #0B5345;
+		}
+		.sub1{
+			height: 150px;
+			width: 100%;
+			background: black;
+			&lt;b>display: flex;&lt;/b>
+		}
+		.sub1 .c{
+			height: 150px;
+			width: 25%;
+			background: #4A235A;
+		}
+		.sub1 .d{
+			height: 150px;
+			width: 25%;
+			background: #641E16;
+		}
+		.sub1 .e{
+			height: 150px;
+			width: 25%;
+			background: #145A32;
+		}
+		.sub1 .f{
+			height: 150px;
+			width: 25%;
+			background: #7D6608;
+		}
+		.sub2{
+			height: 200px;
+			width: 100%;
+			background: #A3E4D7;
+			display: flex;
+		}
+		.sub2 .a{
+			height: 200px;
+			width: 12.5%;
+			background: #239B56;
+		}
+		.sub2 .b{
+			height: 200px;
+			width: 12.5%;
+			background:#BA4A00;
+		}
+		.sub2 .c{
+			height: 200px;
+			width: 12.5%;
+			background:#7B7D7D;
+		}
+		.sub2 .d{
+			height: 200px;
+			width: 12.5%;
+			background: #1B2631;
+		}
+		.sub2 .e{
+			height: 200px;
+			width: 12.5%;
+			background:#EC7063;
+		}
+		.sub2 .f{
+			height: 200px;
+			width: 12.5%;
+			background:#2980B9;
+		}
+		.sub2 .g{
+			height: 200px;
+			width: 12.5%;
+			background:#0E6655;
+		}
+		.sub2 .h{
+			height: 200px;
+			width: 12.5%;
+			background:#196F3D;
+
+		}
+		.sub2 .h .up1
+		{
+			height: 50px;
+			background: #7FB3D5;
+		}
+		.sub2 .h .up2
+		{
+			height: 50px;
+			background: #7DCEA0;
+		}
+		.sub2 .h .down1
+		{
+			height: 50px;
+			background: #D7DBDD;
+		}
+		.sub2 .h .down2
+		{
+			height: 50px;
+			background: #566573;
+		}
+Syntex:inside Body tag
+&lt;div class="main">
+	&lt;div class="a">Part1&lt;/div>
+	&lt;div class="b">Part2&lt;/div>
+&lt;/div>
+&lt;div class="sub1">
+	&lt;div class="c">part1&lt;/div>
+	&lt;div class="d">Part2&lt;/div>
+	&lt;div class="e">Part3&lt;/div>
+	&lt;div class="f">Part4&lt;/div>
+&lt;/div>
+&lt;div class="sub2">
+	&lt;div class="a">Part1&lt;/div>
+	&lt;div class="b">Part2&lt;/div>
+	&lt;div class="c">Part3&lt;/div>
+	&lt;div class="d">Part4&lt;/div>
+	&lt;div class="e">Part5&lt;/div>
+	&lt;div class="f">Part6&lt;/div>
+	&lt;div class="g">Part7&lt;/div>
+	&lt;div class="h">
+		&lt;div class="up1">up1&lt;/div>
+		&lt;div class="up2">up2&lt;/div>
+		&lt;div class="down1">Down1&lt;/div>
+		&lt;div class="down2">Down2&lt;/div>
+	&lt;/div>
+&lt;/div>
+</pre>
+	</fieldset>
+
+</body>
+</html>
