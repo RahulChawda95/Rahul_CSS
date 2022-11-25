@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Product Card Example</title>
+	<style type="text/css">
+		*{box-sizing: border-box; margin: 0; padding: 0;}
+			.product
+			{
+				display: flex;
+				flex-wrap: wrap;
+				padding: 30px;
+			}
+		
+			.main-card
+			{
+				height: 420px;
+				width: 210px;
+				background: lightcoral;
+				margin: 20px 30px;
+				position: relative;
+				box-shadow: 0 0 40px black;
+			}
+			.main-card .tag
+			{
+				font-size: 25px;
+				background: red;
+				color: white;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			.main-card .view
+			{
+				height: 50px;
+				width: 210px;
+				position: absolute;
+				background: black;
+				color: white;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				transition: 1s;
+				text-align: center;
+				line-height: 50px;
+
+			}
+			.view:hover
+			{
+				background: seagreen;
+			}
+			
+			.main-card .image
+			{
+				height: 280px;
+				width: 210px;
+				
+			}
+			.main-card .info
+			{
+				height: 140px;
+				width: 210px;
+				background: lightblue;
+				position: absolute;
+				text-align: center;
+				line-height: 40px;
+
+			}
+			.main-card:hover .view
+			{
+				top: 230px;
+				opacity: 1;
+			}
+			button
+			{
+				height: 40px;
+				width: 170px;
+				background: seagreen;
+				color: white;
+				padding-top: 5px;
+			}
+			
+		
+		</style>
+</head>
+<body>	
+<div class="product">
+			<!-- Start  -->
+	<div class="main-card">
+		<div class="image"><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%"width="100%">
+			<div class="tag"><p>New</p></div>
+	</div>
+	<div class="view">Quick View</div>
+	<div class="info">
+		<p>Formal Blue Shirt</p>
+		<p>$45.99    <del>$69.71</del></p>
+		<button>ADD TO CART</button>
+	</div>
+	</div>
+<!-- End -->	
+		<!-- Start  -->
+	<div class="main-card">
+		<div class="image"><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg" height="100%"width="100%">
+			<div class="tag"><p>New</p></div>
+	</div>
+	<div class="view">Quick View</div>
+	<div class="info">
+		<p>Gabi Full Sleeve Sweatshirt</p>
+		<p>$45.99   <del>$45.99</del></p>
+		<button>ADD TO CART</button>
+	</div>
+	</div>
+<!-- End -->	
+		<!-- Start  -->
+	<div class="main-card">
+		<div class="image"><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg" height="100%"width="100%">
+			<div class="tag"><p>New</p></div>
+	</div>
+	<div class="view">Quick View</div>
+	<div class="info">
+		<p>Dark Blue Track Pants</p>
+		<p>$80.99   <del>$89.71</del></p>
+		<button>ADD TO CART</button>
+	</div>
+	</div>
+<!-- End -->	
+		<!-- Start  -->
+	<div class="main-card">
+		<div class="image"><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" height="100%"width="100%">
+			<div class="tag"><p>New</p></div>
+	</div>
+	<div class="view">Quick View</div>
+	<div class="info">
+		<p>Round Neck Black T-Shirt</p>
+		<p>$190.99   <del>$159.71</del></p>
+		<button>ADD TO CART</button>
+	</div>
+	</div>
+<!-- End -->	
+</div>
+</body>
+</html>
