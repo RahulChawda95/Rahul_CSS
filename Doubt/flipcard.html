@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flip card</title>
+	<style type="text/css">
+		.main
+		{
+			height: 250px;
+			width: 180px;
+			background: transparent;
+			margin: 100px 492px;
+			position: relative;
+		}
+		.main .front,.back
+		{
+			height: 250px;
+			width: 180px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			backface-visibility: hidden;
+			transition: 1s;
+
+		}
+		.info
+		{
+			height: 150px;
+			width: 180px;
+			background: skyblue;
+			position: absolute;
+			top: 350px;
+			left: 500px;
+			text-align: center;
+			line-height: 10px;	
+
+		}
+		.info button
+		{
+			height: 40px;
+			width: 140px;
+			margin: 5px;
+			background:skyblue;
+			position: relative;
+		}
+		
+		.info .cart
+		{
+			height: 35px;
+			width: 135px;
+			border: 5px solid black;
+			position: absolute;
+			top: 70px;
+			left: 18px;
+			opacity: 0;
+			transition: 1s;
+			transform: scale(1);
+		}
+		.info button:hover .cart
+		{
+			opacity: 1;
+			transform: scale(1.5);
+		}
+		.main .front
+		{
+			transform: rotateY(180deg);
+		}
+		.main .back
+		{
+			transform: rotateY(0deg);
+		}
+
+		.main:hover .front
+		{
+			transform: rotateY(0deg);
+		}
+		.main:hover .back
+		{
+			transform: rotateY(180deg);
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="front">
+			<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m5.jpg" height="100%" width="100%">
+		</div>
+		<div class="back">
+			<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m5.jpg" height="100%" width="100%">
+		</div>
+	</div>
+	<div class="info">
+			<p>Men's Black Jeans</p>
+			<p>$60.99 <del>$90.71</del></p>
+			<div>
+				<button>ADD TO CART</button>
+				<div class="cart">	
+				</div>
+			</div>
+</body>
+</html>
