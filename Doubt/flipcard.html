@@ -36,7 +36,7 @@
 			line-height: 10px;	
 
 		}
-		.info button
+		button
 		{
 			height: 40px;
 			width: 140px;
@@ -44,24 +44,23 @@
 			background:skyblue;
 			position: relative;
 		}
-		
-		.info .cart
+		.border
 		{
 			height: 35px;
 			width: 135px;
-			border: 5px solid black;
+			border: 5px solid;
 			position: absolute;
-			top: 70px;
-			left: 18px;
-			opacity: 0;
-			transition: 1s;
+			top: -4px;
+			left: -4px;
 			transform: scale(1);
+			transition: 1s;
 		}
-		.info button:hover .cart
+		button:hover .border
 		{
-			opacity: 1;
-			transform: scale(1.5);
+			transform: scale(1.1,1.2);
 		}
+
+		
 		.main .front
 		{
 			transform: rotateY(180deg);
@@ -94,10 +93,9 @@
 	<div class="info">
 			<p>Men's Black Jeans</p>
 			<p>$60.99 <del>$90.71</del></p>
-			<div>
-				<button>ADD TO CART</button>
-				<div class="cart">	
-				</div>
-			</div>
+			<button>ADD TO CART
+				<div class="border"></div>
+			</button>
+
 </body>
 </html>
