@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Basic Animation:Method2</title>
+	<style type="text/css">
+		div
+		{
+			height: 250px;
+			width: 250px;
+			background: #34495E;
+			transition: 1s;
+			animation-name: Rahul;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes Rahul
+		{
+			from{transform: rotate(45deg);}
+			to{transform: scale(0.8);}
+		}
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>Input:@keyframes all property</legend>
+		<pre>
+		div
+		{
+			height: 250px;
+			width: 250px;
+			background: #34495E;
+			transition: 1s;
+			<b>
+			animation-name: Rahul;====>Taking name 
+			animation-duration: 1s;====>Full Animation Taking Time
+			animation-iteration-count: infinite;====>Animation Run How much time show in screen
+			}
+		</b>
+		
+		<b>
+		@keyframes Rahul=====>@keyframes name=inside From--To this Method to Only Taking Two Type of Animation. 
+		{
+			from{transform: rotate(45deg);}====> From -First taking Effect 
+			to{transform: scale(0.8);}=====>To -Move Second Effect
+		}
+	</b>
+</pre>
+	</fieldset>
+<fieldset style="height:300px">
+	<legend>Output</legend>
+	<div>
+		
+	</div>
+</fieldset>
+</body>
+</html>
