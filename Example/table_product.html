@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>product card using table</title>
+	<style type="text/css">
+		*{box-sizing: border-box; box-shadow: 0 0 20px black;}
+		table
+		{
+			position: relative;
+		}
+		table .view
+		{
+			height:40px;
+			width: 1200px;
+			opacity: 0;
+			top: 0;
+			transition: 1s;
+			text-align: center;
+			line-height: 40px;
+		}
+		table:hover .view
+		{
+			opacity: 1;
+			top: 180px;
+		}
+	</style>
+</head>
+<body>
+<table style="height: 350px;" width="1200px;">
+	<tr class="image" style="height:200px; position:relative;">
+		<td><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m5.jpg" height="100%" width="100%"></td>
+		<td><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m6.jpg" height="100%" width="100%"></td>
+		<td><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m7.jpg" height="100%" width="100%"></td>
+		<td><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m8.jpg" height="100%" width="100%"></td>
+
+	</tr>
+	<tr class="view" style=" background-color: #148F77;position: absolute; ">
+		<td>QUICK VIEW</td>
+		<td>QUICK VIEW</td>
+		<td>QUICK VIEW</td>
+		<td>QUICK VIEW</td>
+	</tr>
+	<tr style="height:50px; text-align:center;  background-color: #148F77;">
+		<td>Men's Black Jeans</td>
+		<td>Analog Watch</td>
+		<td>Analog Watch</td>
+		<td>Analog Watch</td>
+	</tr>
+	<tr style="height:50px; text-align: center;  background-color: #148F77;">
+		<td>$60.99  <del>$90.71</del></td>
+		<td>$160.99 <del>$290.71</del></td>
+		<td>$30.99  <del>$50.71</del></td>
+		<td>$260.99  <del>$390.71</del></td>
+	</tr>
+	<tr style="height: 50px; text-align: center; background-color: #148F77;">
+		<td><button>ADD TO CART</button></td>
+		<td><button>ADD TO CART</button></td>
+		<td><button>ADD TO CART</button></td>
+		<td><button>ADD TO CART</button></td>
+	</tr>
+</table>
+</body>
+</html>
