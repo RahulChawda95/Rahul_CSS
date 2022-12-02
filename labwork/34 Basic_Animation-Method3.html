@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Basic Animation Using ShortHand Property</title>
+	<style type="text/css">
+	div
+	{
+		height: 250px;
+		width: 250px;
+		background: #EC7063;
+		transition: 3s;
+		animation: Rahul 3s infinite;
+	}	
+
+		@keyframes Rahul
+		{
+			0%{background: #EC7063;}
+			20%{background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKnrRrbWdlE00OJpWixt_Xa83bnoAVaq9cHTkqiw5WrN44iBIjQB0Jufx_jltIMPCnjcE&usqp=CAU); background-size: 100% 100%; transform: rotate(360deg);}
+			40%{background: radial-gradient(#5499C7,#0E6251,#1B2631); transform: rotate(360deg);}
+			60%{background:#0B5345; height: 50px; width: 50px;}
+			80%{background: #16A085; height: 100px; width: 100px; border-radius: 50%;}
+			100%{background: #154360;}
+
+		}
+
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>Input:@keyframe-100 Veraities</legend>
+		<pre>
+			<h1>Genral Syntex:</h1>
+			div
+	{
+		height: 250px;
+		width: 250px;
+		background: #EC7063;
+		transition: 3s;
+		<b>animation: Rahul 1s infinite;===>Short hand property</b>
+		<b>animation:Name Time How much time repeat</b>
+	}	
+		<b>
+		@keyframes Rahul====>This Method to Take Differant 100 veraities to take Animatation
+		{
+From start<====0%{background: #EC7063;}
+			20%{background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKnrRrbWdlE00OJpWixt_Xa83bnoAVaq9cHTkqiw5WrN44iBIjQB0Jufx_jltIMPCnjcE&usqp=CAU); background-size: 100% 100%; transform: rotate(360deg);}
+			40%{background: radial-gradient(#5499C7,#0E6251,#1B2631); transform: rotate(360deg);}
+			60%{background:#0B5345; height: 50px; width: 50px;}
+			80%{background: #16A085; height: 100px; width: 100px; border-radius: 50%;}
+End time<====100%{background: #154360;}
+
+		}
+</b>
+		</pre>
+	</fieldset>
+	<fieldset style="height:300px">
+		<legend>Output</legend>
+		<div>
+			
+		</div>
+	</fieldset>
+</body>
+</html>
