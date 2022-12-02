@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Preloder Animation</title>
+	<style type="text/css">
+		*{box-sizing: border-box;}
+		.main
+		{
+			height: 200px;
+			width: 200px;
+			background: transparent;
+			border: 20px solid transparent;
+			border-top: 15px solid #17202A;
+			border-radius: 50%;
+			margin: 150px auto;
+			position: relative;
+			top: 0;
+			left: 0;
+			animation:preloader 1s infinite;
+
+		}
+		.sub1
+		{
+			height: 150px;
+			width: 150px;
+			background: transparent;
+			border: 20px solid transparent;
+			border-top: 15px solid #0B5345;
+			border-radius: 50%;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			animation:preloader 3s infinite;			
+		}
+		.sub2
+		{
+			height: 100px;
+			width: 100px;
+			background: transparent;
+			border: 20px solid transparent;
+			border-top: 15px solid #154360;
+			border-radius: 50%;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			animation:preloader 5s infinite;
+
+		}
+		@keyframes preloader
+		{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(360deg);}
+		}
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>Input</legend>
+		<pre>
+		*{box-sizing: border-box;}
+		<h2>NOTE:For individually animate main div and other sub div.</h2>
+		.main
+		{
+			height: 200px;
+			width: 200px;
+			background: transparent;
+			border: 20px solid transparent;
+			border-top: 15px solid #17202A;
+			border-radius: 50%;
+			margin: 150px auto;
+			position: relative;
+			top: 0;
+			left: 0;
+			<b>animation:preloader 1s infinite;===>animation:Name Time How much time</b>
+			
+		}
+		.sub1
+		{
+			height: 150px;
+			width: 150px;
+			background: transparent;
+			border: 20px solid transparent;
+			border-top: 15px solid #0B5345;
+			border-radius: 50%;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			<b>animation:preloader 3s infinite;===>animation:Name Time How much time</b>
+		}
+		.sub2
+		{
+			height: 100px;
+			width: 100px;
+			background: transparent;
+			border: 20px solid transparent;
+			border-top: 15px solid #154360;
+			border-radius: 50%;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			<b>animation:preloader 5s infinite;===>animation:Name Time How much time</b>
+		}
+		@keyframes preloader
+		{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(360deg);}
+		}
+		<b>Syntex:inside Body</b>
+
+&lt;div class="main">
+	&lt;div class="sub1">
+		&lt;div class="sub2">
+			
+		&lt;/div>
+	&lt;/div>
+&lt;/div>		
+		</pre>
+	</fieldset>
+	<fieldset>
+		<legend>Output</legend>
+<div class="main">
+	<div class="sub1">
+		<div class="sub2">
+			
+		</div>
+	</div>
+</div>		
+	</fieldset>
+
+</body>
+</html>
