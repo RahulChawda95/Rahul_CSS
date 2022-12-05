@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Play button Hover</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		.button
+		{
+			height: 100px;
+			width: 100px;
+			background: #1B4F72;
+			border-radius: 50%;
+			margin: 150px auto;
+			position: relative;
+			z-index: 0;
+		}
+		.button .fa-play
+		{
+			font-size: 30px;
+			text-align: 100px;
+			color: white;
+			margin: 35px 43px;
+			
+
+		}
+		.effect1,.effect2
+		{
+			height: 100px;
+			width: 100px;
+			background: #154360;
+			border-radius: 50%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			transition: 1s;
+		}
+		.effect1
+		{
+			animation:hover_effect1 1s infinite;
+		}
+		.effect2
+		{
+			animation:hover_effect2 1s infinite;
+		}
+		@keyframes hover_effect1
+		{
+			from{transform: scale(1.0); opacity: 1;}
+			to{transform: scale(1.5); opacity: 0;}
+		}
+		@keyframes hover_effect2
+		{
+			from{transform: scale(1.0); opacity: 1;}
+			to{transform: scale(2); opacity: 0;}
+		}
+	</style>
+</head>
+<body>
+<div class="button">
+			<i class="fa-solid fa-play"></i>
+	<div class="effect1"></div>
+	<div class="effect2"></div>
+</div>
+</body>
+</html>
