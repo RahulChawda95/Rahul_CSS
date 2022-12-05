@@ -1,0 +1,98 @@
+*{box-sizing: border-box;}
+.container
+{
+	height: 150px;
+	width: 100%;
+	box-shadow: 0 0 20px black;
+	display: flex;
+	flex-wrap: wrap;
+
+
+}
+.search,.logo,.social
+{
+	height: 150px;
+	width: 33.33%;
+	text-align: center;
+	line-height: 150px;
+}
+.search input
+{
+height: 35px;
+width: 250px;
+margin: 10px;
+font-size: 20px;
+letter-spacing: 2px;
+}
+.search input:focus
+{
+	outline: none;
+	font-size: 18px;
+	color: gray;
+}
+.search input::placeholder
+{
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+.search .fa-magnifying-glass
+{
+height: 35px;
+width: 35px;
+padding: 10px;
+background: #2fdab8;
+}
+.logo
+{
+	font-size: 40px;
+	font-family: 'Roboto', sans-serif;	
+	line-height: 50px;
+}
+
+.logo .e
+{
+	padding: 12.5px;
+	background: black;
+	color: white;	
+}
+.logo .y
+{
+	position: relative;
+	
+}
+.logo .fa-bag-shopping
+{
+	position: absolute;
+	top: 87%;
+	left: -35%;
+	font-size: 25px;
+}
+.social .fa-brands
+{
+	height: 45px;
+	width: 45px;
+	font-size: 40px;
+	text-align: center;
+	line-height: 45px;
+	text-align: center;
+	
+}
+.social .fa-facebook-f
+{
+	background: #337ab7;
+	color: white;
+}
+.social .fa-twitter
+{
+	background: skyblue;
+	color: white;
+}
+.social .fa-instagram
+{
+	background:orange;
+	color: white;
+}
+.social .fa-google
+{
+	background: white;
+}
