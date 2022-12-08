@@ -90,6 +90,22 @@
 			margin: 15px;
 
 		}
+		.tb1
+		{
+			height: 400px;
+			width: 250px;
+			margin-top: -18px;
+
+		}
+		.tb2
+		{
+			height: 50px;
+			width: 250px;
+		}
+		.container2 td
+		{
+			color: white;
+		}
 		
 
 		.container3
@@ -98,6 +114,59 @@
 			top: 0;
 			left: 680px;
 		}
+		.price
+		{
+			height: 50px;
+			width: 250px;
+			border-radius: 25px;
+			box-shadow: 0 0 15px gray;
+			color: white;
+			padding: 15px;
+		}
+		.card
+		{
+			height: 150px;
+			width: 249px;
+			box-shadow: 0 0 10px gray;
+			border-radius: 25px;
+			background: #F1C40F;
+		}
+		.card span
+		{
+			padding: 20px;
+			color: white;
+		}
+		.card1
+		{
+			height:50px;
+		 	width:240px; 
+		 	box-shadow:0 0 10px gray; 
+		 	border-radius: 15px;
+		 	padding: 2.5px;
+		 }
+		 button
+		 {
+		 	background: rgba(0, 0, 0, 0.9);
+		 	color: white;
+		 	height:30px; 
+		 	width:150px;
+		 	border-radius: 10px;
+		 	box-shadow: 0 0 10px gray;
+		 	margin-left: 50px;
+		 }
+		 .icon
+		 {
+		 	height: 40px;
+		 	width: 40px;
+		 	padding: 8px;
+		 	border-radius: 50%;
+		 	background: black;
+		 	box-shadow: 0 0 10px gray;
+		 	color: white;
+		 	font-size: 25px;
+		 	margin-left: 100px;
+		 	margin-top: 5px;
+		 }
 	</style>
 </head>
 <body>
@@ -109,24 +178,79 @@
 		<div class="button">START NOW</div>
 	</div>
 	<div class="container2">
-		<ul class="menu"> 
-			<li>Last Name</li>
-
-			<li>Massage</li>
-
-			<li>Notification</li>
-
-			<li>Account Detail</li>
-
-			<li>My Purchase</li>
-
-			<li>Setting</li>
-
-			<li>Lorem Ipsum</li>
-
-		</ul>
+		<table class="tb1">
+		<tr>
+			<td style="color:white; font-size: 25px; padding-right: 35px;"><i class="fa-solid fa-user"></i></td>
+			<td>
+				<div style="color:gray">Name</div>
+				<div style="color:white">Last Name:</div>
+			</td>
+			<td style="color:white; font-size: 25px; padding-left:20px"><i class="fa-solid fa-arrow-right"></i></td>
+		</tr>
+		<tr>
+			<td style="padding-right: 35px; font-size: 25px;"><i class="fa-solid fa-message"></i></td>
+			<td>Massage</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 35px; font-size: 25px;"><i class="fa-solid fa-bell"></i></td>
+			<td>Notification</td>
+		<tr>
+			<td style="padding-right: 35px; font-size: 25px;"><i class="fa-regular fa-user"></i></td>
+			<td>Account Detail</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 35px; font-size: 25px;"><i class="fa-solid fa-cart-shopping"></i></td>
+			<td>My Purchase</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 40px; font-size: 25px;"><i class="fa-solid fa-gear"></i></td>
+			<td>Setting</td>
+		</tr>
+		<tr>
+			<td><input type="radio" name=""></td>
+			<td>Lorem ispun</td>
+		</tr>
+	</table> 
+	<table class="tb2">
+		<tr align="center">
+			<td><i class="fa-regular fa-star"></i></td>
+			<td><i class="fa-solid fa-money-bill-trend-up"></i></td>
+			<td><i class="fa-solid fa-house"></i></td>
+			<td><i class="fa-regular fa-bell"></i></td>
+			<td><i class="fa-solid fa-gear"></i></td>
+		</tr>
+	</table>
 	</div>
-	<div class="container3"></div>
+	<div class="container3">
+		<table style="height:50px; width: 250px;">
+			<tr>
+			<td style="color:white; font-size: 25px; padding-right: 35px;"><i class="fa-solid fa-user"></i></td>
+			<td>
+				<div style="color:gray">Name</div>
+				<div style="color:white">Last Name:</div>
+			</td>
+			<td style="color:white; font-size: 25px; padding-left:20px"><i class="fa-solid fa-arrow-right"></i></td>
+		</tr>
+		</table>
+		<div class="price">
+			Lorem Ipsum:<ins style="padding:32px"> $297,345</ins>
+		</div>
+		<p style="color:white; text-align:center;">Lorem Ipsum:</p>
+		<div class="card">
+			<span>Lorem</span><span>Ipsum</span><span style="font-size: 30px;"><i class="fa-regular fa-credit-card"></i></span>
+			<div style="color:gray; text-align:center;">Dolor sit</div>
+			<hr>
+			<span>MM/YY</span> <span>CVV</span>
+			<hr style="width:60px;"><hr style="width:80px; margin:-8px 0; padding: -5px; ">
+		</div>
+		<p style="color:gray; margin:0; text-align: center;">Your Card:</p>
+		<div class="card1">
+			<i class="fa-regular fa-credit-card" style="color:white; font-size:40px;"></i>
+			<span style="color:gray;padding: -10px;">**** **** **** 0000</div>
+		 </span>
+		<button style="">LOREM IPSUM</button>
+		<div class="icon"><i class="fa-solid fa-wallet"></i></div>
+	</div>
 </div>
 </body>
 </html>
