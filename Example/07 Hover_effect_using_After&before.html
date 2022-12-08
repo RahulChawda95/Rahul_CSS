@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hover Effect USing After Before</title>
+	<style type="text/css">
+		div{
+			height: 50px;
+			width: 150px;
+			border-radius: 20px;
+			background: #A9CCE3;
+			margin: 100px auto;
+			text-align: center;
+			line-height: 50px;
+			box-shadow: 0 0 25px #1B2631 inset;
+			position: relative;
+			overflow: hidden;
+			z-index: 0;
+		}
+		div::after
+		{
+			content: "";
+			height: 10px;
+			width: 300px;
+			box-shadow: 0 0 8px #85929E;
+			position: absolute;
+			top: 0px;
+			left: -160px;
+			transform: rotate(145deg);
+			transition: 2s;
+			z-index: -1;
+
+		}
+		div:hover::after
+		{
+			left: 155px;
+		}
+	</style>
+</head>
+<body>
+
+	<div>
+		HOVER ME
+	</div>
+</body>
+</html>

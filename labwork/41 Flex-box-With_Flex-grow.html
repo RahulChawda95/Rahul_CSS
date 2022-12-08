@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flex-box With flex-grow</title>
+	<style type="text/css">
+		.flex-container
+		{
+			border: 2px solid;
+			flex-wrap: wrap;
+			display: flex;
+		}
+		.flex-box
+		{
+			flex-grow: 1;
+		}
+		.grow1{height: 100px;flex-basis: 100px; background: #641E16;}
+		.grow2{height: 100px;flex-basis: 100px; background: #4A235A;}
+		.grow3{height: 100px;flex-basis: 100px; background: #154360;}
+		.grow4{height: 100px;flex-basis: 100px; background:#0B5345;}
+		.grow5{height: 100px;flex-basis: 100px; background:#58D68D;}
+		.grow6{height: 100px;flex-basis: 100px; background:#D4AC0D;}
+		.grow7{height: 100px;flex-basis: 100px; background:#5D6D7E;}
+		.grow8{height: 100px;flex-basis: 100px; background: #1B2631;}
+		.grow9{height: 100px;flex-basis: 100px; background: #21618C;}
+		.grow10{height: 100px;flex-basis: 100px; background:#EC7063;}
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>Input</legend>
+<pre>
+<b>Syntex:inside style tag</b>
+	.flex-container
+		{
+			border: 2px solid;
+			flex-wrap: wrap;
+			display: flex;
+		}
+		.flex-box
+		{
+			flex-grow: 1;
+		}
+		.grow1{height: 100px;flex-basis: 100px; background: #641E16;}
+		.grow2{height: 100px;flex-basis: 100px; background: #4A235A;}
+		.grow3{height: 100px;flex-basis: 100px; background: #154360;}
+		.grow4{height: 100px;flex-basis: 100px; background:#0B5345;}
+		.grow5{height: 100px;flex-basis: 100px; background:#58D68D;}
+		.grow6{height: 100px;flex-basis: 100px; background:#D4AC0D;}
+		.grow7{height: 100px;flex-basis: 100px; background:#5D6D7E;}
+		.grow8{height: 100px;flex-basis: 100px; background: #1B2631;}
+		.grow9{height: 100px;flex-basis: 100px; background: #21618C;}
+		.grow10{height: 100px;flex-basis: 100px; background:#EC7063;}
+<b>Syntex:inside body</b>
+	&lt;div class="flex-container">
+		&lt;div class="flex-box grow1">&lt;/div>
+		&lt;div class="flex-box grow2">&lt;/div>
+		&lt;div class="flex-box grow3">&lt;/div>
+		&lt;div class="flex-box grow4">&lt;/div>
+		&lt;div class="flex-box grow5">&lt;/div>
+		&lt;div class="flex-box grow6">&lt;/div>
+		&lt;div class="flex-box grow7">&lt;/div>
+		&lt;div class="flex-box grow8">&lt;/div>
+		&lt;div class="flex-box grow9">&lt;/div>
+		&lt;div class="flex-box grow10">&lt;/div>
+	&lt;/div>
+
+<h1>NOTE:</h1>
+	==>The flex-grow property is a sub-property of the Flexible Box Layout module.
+	===>It defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. 
+	It dictates what amount of the available space inside the flex container the item should take up.
+	====>For example, if all items have flex-grow set to 1, every child will set to an equal size inside the container.
+	 If you were to give one of the children a value of 2, that child would take up twice as much space as the others.
+		</pre>
+	</fieldset>
+	<fieldset>
+		<legend>Output</legend>
+		<div class="flex-container">
+			<div class="flex-box grow1"></div>
+			<div class="flex-box grow2"></div>
+			<div class="flex-box grow3"></div>
+			<div class="flex-box grow4"></div>
+			<div class="flex-box grow5"></div>
+			<div class="flex-box grow6"></div>
+			<div class="flex-box grow7"></div>
+			<div class="flex-box grow8"></div>
+			<div class="flex-box grow9"></div>
+			<div class="flex-box grow10"></div>
+		</div>
+<div><h1>NOTE:</h1><h2>The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container.
+=>If the element is not a flexible item, the flex-grow property has no effect.
+</h2></div>
+	</fieldset>
+</body>
+</html>

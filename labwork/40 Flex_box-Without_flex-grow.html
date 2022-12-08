@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flex box without flex-grow</title>
+	<style type="text/css">
+		.container
+		{
+			border: 2px solid;
+			display: flex;
+			flex-wrap: wrap;
+
+		}
+		.b1{height: 100px; width:100px; background:#1B4F72;}
+		.b2{height: 100px; flex-basis:100px; background:#6E2C00;}
+		.b3{height: 100px; width:100px; background:#0B5345;}
+		.b4{height: 100px; flex-basis:100px; background:#424949;}
+		.b5{height: 100px; flex-basis:100px; background:#641E16;}
+		.b6{height: 100px; flex-basis:100px; background:#1B2631;}
+		.b7{height: 100px; flex-basis:100px; background:#EC7063;}
+		.b8{height: 100px; flex-basis:100px; background:#F4D03F;}
+		.b9{height: 100px; flex-basis:100px; background:#2980B9;}
+		.b10{height: 100px; flex-basis:100px; background:#17A589;}
+
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>Input</legend>
+		<pre>
+			<h3>Syntex:Inside Style tag</h3>
+
+			.container
+		{
+			border: 2px solid;
+			display: flex;
+			flex-wrap: wrap;
+
+		}
+		.b1{height: 100px; width:100px; background:#1B4F72;}
+		.b2{height: 100px; flex-basis:100px; background:#6E2C00;}
+		.b3{height: 100px; width:100px; background:#0B5345;}
+		.b4{height: 100px; flex-basis:100px; background:#424949;}
+		.b5{height: 100px; flex-basis:100px; background:#641E16;}
+		.b6{height: 100px; flex-basis:100px; background:#1B2631;}
+		.b7{height: 100px; flex-basis:100px; background:#EC7063;}
+		.b8{height: 100px; flex-basis:100px; background:#F4D03F;}
+		.b9{height: 100px; flex-basis:100px; background:#2980B9;}
+		.b10{height: 100px; flex-basis:100px; background:#17A589;}
+
+			<h3>Syntex:inside body</h3>
+		&lt;div class="container">
+			&lt;div class="box b1">&lt;/div>
+			&lt;div class="box b2">&lt;/div>
+			&lt;div class="box b3">&lt;/div>
+			&lt;div class="box b4">&lt;/div>
+			&lt;div class="box b5">&lt;/div>
+			&lt;div class="box b6">&lt;/div>
+			&lt;div class="box b7">&lt;/div>
+			&lt;div class="box b8">&lt;/div>
+			&lt;div class="box b9">&lt;/div>
+			&lt;div class="box b10">&lt;/div>
+		&lt;/div>
+<h1>NOTE:</h1><h2>A Flexible Layout must have a parent element with the display property set to flex.
+Direct child elements(s) of the flexible container automatically becomes flexible items.</h2>
+		</pre>
+	</fieldset>
+	<fieldset>
+		<legend>Output</legend>
+<div class="container">
+	<div class="box b1"></div>
+	<div class="box b2"></div>
+	<div class="box b3"></div>
+	<div class="box b4"></div>
+	<div class="box b5"></div>
+	<div class="box b6"></div>
+	<div class="box b7"></div>
+	<div class="box b8"></div>
+	<div class="box b9"></div>
+	<div class="box b10"></div>
+</div>
+<div><h1>NOTE:</h1><h2>A Flexible Layout must have a parent element with the display property set to flex.
+Direct child elements(s) of the flexible container automatically becomes flexible items.</h2></div>
+</fieldset>
+</body>
+</html>

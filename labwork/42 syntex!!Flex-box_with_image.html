@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flex box with image</title>
+	<style type="text/css">
+		.container
+		{
+
+			border: 1px solid;
+		}
+		.foreground
+		{
+			height:250px;
+			width: 50%;
+			
+		}
+		.foreground1
+		{
+			height:250px;
+			width: 50%;
+		}
+		.foreground1 img
+		{
+			object-fit: cover;
+		}
+		.foreground2
+		{
+			height:250px;
+			width: 50%;
+			
+		}
+		.foreground2 img
+		{
+			object-fit: contain;
+		}
+		.foreground3
+		{
+			height:250px;
+			width: 50%;
+			
+		}
+		.foreground3 img
+		{
+			object-fit: scale-down;
+		}
+		.background1
+		{
+				height: 250px;
+				width: 50%;
+				background: url(https://cc-prod.scene7.com/is/image/CCProdAuthor/Graphic-Design-Main-300?$pjpeg$&jpegSize=200&wid=670);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% 100%;
+		}
+		.background2
+		{
+				height: 250px;
+				width: 50%;
+				background: url(https://cc-prod.scene7.com/is/image/CCProdAuthor/Graphic-Design-Main-300?$pjpeg$&jpegSize=200&wid=670);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+		}
+		.background3
+		{
+				height: 250px;
+				width: 50%;
+				background: url(https://cc-prod.scene7.com/is/image/CCProdAuthor/Graphic-Design-Main-300?$pjpeg$&jpegSize=200&wid=670);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="foreground">
+		<img src="https://cc-prod.scene7.com/is/image/CCProdAuthor/Graphic-Design-Main-300?$pjpeg$&jpegSize=200&wid=670" height="100%" width="100%">
+	</div>
+</div>
+<div class="container">
+	<div class="foreground1">
+		<img src="https://cc-prod.scene7.com/is/image/CCProdAuthor/Graphic-Design-Main-300?$pjpeg$&jpegSize=200&wid=670" height="100%" width="100%">
+	</div>
+</div>
+<div class="container">
+	<div class="foreground2">
+		<img src="https://cc-prod.scene7.com/is/image/CCProdAuthor/Graphic-Design-Main-300?$pjpeg$&jpegSize=200&wid=670" height="100%" width="100%">
+	</div>
+</div>
+<div class="container">
+	<div class="foreground3">
+		<img src="https://cc-prod.scene7.com/is/image/CCProdAuthor/Graphic-Design-Main-300?$pjpeg$&jpegSize=200&wid=670" height="100%" width="100%">
+	</div>
+</div>
+<div class="container">
+<div class="background1"></div>
+</div>
+<div class="container">
+<div class="background2"></div>
+</div>
+<div class="container">
+<div class="background3"></div>	
+</div>
+</body>
+</html>
