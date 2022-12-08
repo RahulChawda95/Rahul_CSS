@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>display:flex when using @media</title>
+	<style type="text/css">
+		*{box-sizing: border-box;}
+		.container
+		{
+			height: auto;
+			background: #0E6251;
+			display: flex;
+			flex-wrap: wrap;
+
+		}
+		.container .col
+		{
+			height: 350px;
+			width: 50%;
+			border: 2px solid #17202A;
+		}
+		@media(max-width: 1100px)
+		{
+			.container .r1{width: 40%; background: #EC7063;}
+			.container .r2{width: 60%; background: #873600;}
+		}
+		@media(max-width: 900px)
+		{
+			.container .r1{width: 20%; background: black;}
+			.container .r2{width: 80%; background: skyblue;}
+		}
+		@media (max-width: 700px)
+		{
+			.container .r1{width: 50%; border: 15px inset #283747;}
+			.container .r2{width: 50%; border: 15px outset #17A589;}
+		}
+		@media(max-width:460px)
+		{
+			.container .col {width:100%}
+		}
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>Input:</legend>
+		<pre>
+<h2>When Using Display:flex with @media function</h2>
+			*{box-sizing: border-box;}
+		.container
+		{
+			<b>height: auto;====> Change height in auto set</b>
+			background: #0E6251;
+			<b>display: flex;====>for using flex box</b>
+			<b>flex-wrap: wrap;====>also flex with this property</b>
+
+		}
+		.container .col
+		{
+			height: 350px;
+			width: 50%;
+			border: 2px solid #17202A;
+		}
+		<b>@media(max-width: 1100px)<b>
+		{
+			.container .r1{width: 40%; background: #EC7063;}==>when size change to replace with new content
+			.container .r2{width: 60%; background: #873600;}
+		}
+		<b>@media(max-width: 900px)<b>
+		{
+			.container .r1{width: 20%; background: black;}
+			.container .r2{width: 80%; background: skyblue;}
+		}
+		<b>@media (max-width: 700px)<b>
+		{
+			.container .r1{width: 50%; border: 15px inset #283747;}
+			.container .r2{width: 50%; border: 15px outset #17A589;}
+		}
+		<b>@media(max-width:460px)<b>
+		{
+			.container .col {width:100%}
+		}
+		</pre>
+	</fieldset>
+	<fieldset>
+		<legend>Output</legend>
+<div class="container">
+	<div class="col r1"></div>
+	<div class="col r2"></div>
+</div>
+	</fieldset>
+
+</body>
+</html>

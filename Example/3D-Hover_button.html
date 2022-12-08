@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>3D-Hover Button</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		a
+		{
+			position: relative;
+			top: 0;
+			left: 0;
+			display: block;
+			transition: 1s;
+			transform-style: preserve-3d;
+			margin-top: 100px;
+
+		}
+		.back,.front
+		{
+			height: 55px;
+			width: 60px;
+			position: absolute;
+			top: 0;
+			left:0;
+			transition: 1s;
+			backface-visibility: hidden;
+			transform: translateZ(30px);
+		}
+		.front
+		{
+			font-size: 48px;
+			color: black;
+			background: #3FCCB0;
+			
+		}
+		.back
+		{
+		 font-size: 48px;
+		 color: black;
+		 background: #85C1E9;
+		 transform:rotateX(90deg) translateZ(30px);
+
+		}
+		a:hover
+		{
+			transform: rotateX(-90deg);
+		}
+	</style>
+</head>
+<body>
+<a href="">
+	<div class="front">
+		<i class="fa-brands fa-free-code-camp"></i>
+	</div>
+	<div class="back">
+		<i class="fa-brands fa-react"></i>
+	</div>
+
+</a>
+</body>
+</html>

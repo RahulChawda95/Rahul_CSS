@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Media in flex:no effect when using flex property</title>
+	<style type="text/css">
+		*{box-sizing: border-box;}
+		.container
+		{
+			height: 350px;
+			width: 100%;
+			background: #0E6251;
+			display: flex;
+		}
+		.container .col
+		{
+			height: 350px;
+			width: 50%;
+			border: 2px solid #17202A;
+		}
+		@media(max-width: 1100px)
+		{
+			.col .r1{width: 40%;}
+			.col .r2{width: 60%;}
+		}
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>Input</legend>
+		<pre>
+			<h2>No Effect When Using Display:Flex Property. </h2>
+		*{box-sizing: border-box;}
+		.container
+		{
+			height: 350px;
+			width: 100%;
+			background: #0E6251;
+			<b>display: flex;====>flex Two Container</b>
+		}
+		.container .col
+		{
+			height: 350px;
+			width: 50%;
+			border: 2px solid #17202A;
+		}
+		<b>@media(max-width: 1100px)====>When Using Showing no Any Effect</b>
+		{
+			.col .r1{width: 40%;}
+			.col .r2{width: 60%;}
+		}
+	</pre>
+	</fieldset>
+	<fieldset>
+		<legend>Output</legend>
+<div class="container">
+	<div class="col r1"></div>
+	<div class="col r2"></div>
+</div>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Basic media quary</title>
+<style type="text/css">
+	div
+	{
+		height: 250px;
+		width: 100%;
+		background: #154360;
+	}
+	@media (max-width: 900px)
+	{
+		div
+		{
+			background: #0E6251;
+		}
+	}
+	@media (max-width: 700px)
+	{
+		div
+		{
+			background: #424949;
+		}
+	}
+	@media(max-width: 500px)
+	{
+		div
+		{
+			background: #1B2631;
+		}
+	}
+</style>
+</head>
+<body>
+	<fieldset>
+		<legend>Input:</legend>
+		<pre>
+	div
+	{
+		height: 250px;
+		width: 100%;
+		background: #154360;====>1300px to 900px using #154360 this color
+
+
+
+
+	}
+	<h3>Genral syntex:@media (max-width: size in px)</h3>
+	<b>@media (max-width: 900px)====>up to 900px using this color</b>
+	{
+		div
+		{
+			background: #0E6251;
+		}
+	}
+	<b>@media (max-width: 700px)====>up to 700px using this color</b>
+	{
+		div
+		{
+			background: #424949;
+		}
+	}
+	<b>@media(max-width: 500px)====>up to 500px using this color</b>
+	{
+		div
+		{
+			background: #1B2631;
+		}
+	}
+		</pre>
+	</fieldset>
+<fieldset>
+	<legend>Output</legend>
+	<div>
+		
+	</div>
+</fieldset>
+</body>
+</html>
