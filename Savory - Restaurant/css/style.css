@@ -10,12 +10,12 @@ body
 }
 .nav-container
 {
-	height: 450px;
+	height: 500px;
 	width: 1100px;
 	background: rgba(0, 0, 0, 0.7);
 	position: absolute;
 	display: none;
-	margin-top: -50px;
+	margin-top: -43px;
 	margin-left: -1025px;
 	overflow: auto;
 }
@@ -64,7 +64,7 @@ body
 		{
 			height: 450px;
 			width: 1100px;
-			border: 1px solid;
+			/*border: 1px solid;*/
 			background: rgba(0, 0, 0, 0.7);
 		}
 		.navbar
@@ -181,7 +181,7 @@ body
 	height: 50px;
 	width: 50px;
 	/*border: 1px solid;*/
-	margin-top: -80px;
+	margin-top: -120px;
 	margin-left: 1025px;
 }
 .fa-bars
@@ -211,7 +211,7 @@ body
 
 .slider-info
 	{
-		height: 300px;
+		height: auto;
 		width: 700px;
 		margin: 20px auto;
 		/*border: 1px solid;*/
@@ -231,13 +231,14 @@ body
 		padding-top:50px;
 		font-size: 20px;
 		color: #424949;
+		/*border: 1px solid;*/
 	}
 
 .slider-info button
 	{
 		height: 50px;
 		width: 150px;
-		border: 1px solid;
+		/*border: 1px solid;*/
 		background: white;
 		position: relative;
 		top: 50px;

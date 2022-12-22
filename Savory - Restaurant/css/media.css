@@ -1,7 +1,10 @@
+*{box-sizing: border-box;}
+
+
 @media(max-width: 1100px)
 {
 	.main-container .slider {width: 100%;}
-	.menu1 .menu-header{width: 80%; height: 150px; text-align: justify;overflow: auto;}
+	.menu1 .menu-header{width: 75%; height: 150px; text-align: justify;overflow: auto;}
 	.menu-icon{margin-top: -80px; margin-left: 850px;}
 	.menu-container{margin: 0; height: 350px;}
 	.menu-container .menu-left,.menu-right{margin: 15px;}
@@ -11,13 +14,23 @@
 }
 @media(max-width: 900px)
 {
-	.main-container .slider-info {width: 100%; margin-left: 25px; text-align: left;}
-	.slider-info button{margin-left: 300px;}
+	.main-container{margin: -25px;}
+	.slider{height: 480px;}
+	.main-container .slider-info {height: 380px; padding-right: 200px; margin-left: 25px; text-align: left;}
+	.slider-info{margin: 0;}
+	.slider-info h1{ line-height: 75px;}
+	.slider-info p { padding-top: 0px; color: black; font-size: 20px;}
+	.slider-info button{margin-left: 300px; margin-top: -80px; background: black; color: white;}
+	button .view-menu{background: #17202A;}
 	.st-logo{display: none;}
-	.menu-icon{margin-top: -300px; margin-left: 750px;}
-	.menu1 .menu-header{width: 80%; height: 150px; text-align: justify;overflow: auto;}
-	.menu-container{margin: 0; height: 350px;}
-	.menu-container .menu-left,.menu-right{margin-left: -20px; }
+
+
+
+
+	.menu-icon  { height: 550; margin-top: -380px; margin-left: 800px;}
+	.menu1 .menu-header{width: 50%; height: 190px; margin-left: 0;}
+	
+	
 	.main-booktable2 .booktable{width: 80%; height: 150px; text-align: center; overflow: auto;}
 	.menu3{margin-top: 55%;}
 	.people-say .People1{height: 300px;width: 50%;margin-left: 50px;  border: 2px solid;}
