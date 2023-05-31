@@ -1,0 +1,592 @@
+@media(max-width: 1100px)
+{
+
+.heading{grid-template-columns: 4fr 6fr;}
+.nav-container
+	{
+		width: 100%;
+		height: 80px;
+		grid-template-columns: 0fr 1fr 1fr 1fr 1fr 1fr 1fr 3fr;
+		grid-template-areas: 
+		'box home menu1 menu2 menu3 menu4 menu5 search';
+	}
+.big-add .big-logo{height: 80px;width: 95%;}
+.nav-container{grid-template-columns: 0fr 1fr 1fr 1fr 1fr 1fr 1fr 6fr;}
+.featured-img1 .img1-info{width: 80%;margin-top: 400px;margin-left: 20px;}
+
+}
+
+@media(max-width:900px)
+{
+.heading{grid-template-columns: 3fr 7fr}
+.heading .logo{background-position: 15px 35px}
+.featured{
+	height: 500px;
+	width: 98%;
+	display: grid;
+	grid-gap: 2px;
+	margin-left: 0;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 
+	'img1 img2'
+	'img3 img4';
+/*	border: 1px solid;*/
+	margin: 5px auto;}
+
+.featured-img1 .img1-info{
+	width: 90%;
+/*	border: 1px solid;*/
+	margin-top: 190px;
+	margin-left: 25px;}
+.featured-img2 .img2-info
+{
+	width: 98%;
+/*	border: 1px solid;*/
+	margin-top: 190px;
+	margin-left: 10px;
+	
+}
+.featured-img3 .img3-info
+{
+	width: 75%;
+/*	border: 1px solid;*/
+	margin-top: 190px;
+	margin-left: 20px;
+}
+.featured-img4 .img4-info
+{
+	width: 75%;
+/*	border: 1px solid;*/
+	margin-top: 190px;
+	margin-left: 20px;	
+}
+.sub-nav{
+	margin:25px auto;
+	margin-left: 10px;
+}
+.blank 
+{
+	margin-left: 10px;
+}
+.travel-text
+{
+	padding: 30px 0;
+	text-align: center;
+	line-height: 0px;
+}
+.travel-video
+{
+	width: 95%;
+	margin: 10px 15px;
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: 5fr 3fr 3fr;
+	grid-template-areas: 
+	'video1 video2 video3'
+	'video1 video4 video5';
+}
+.video1 .video1-info
+{
+	width: 100%;
+	border: 1px solid;
+	padding-left: 5px;
+	margin-top: 480px;
+/*	margin-left: 5px;*/
+}
+.blank2{margin: 10px}
+
+.fashion-video
+{
+	width: 95%;
+	margin: 20px 15px;
+	display: grid; 
+	grid-template-columns: 5fr 5fr 5fr;
+	grid-gap: 3px;
+	grid-template-areas:  
+	'fashion-text1 fashion-text2 fashion-text3'
+	'fashion-video1 fashion-video2 fashion-video3'
+	'fashion-video1 fashion-video2 fashion-video4'
+	'fashion-video1 fashion-video2 fashion-video5'
+	'fashion-video6 fashion-video7 fashion-video8'
+	'fashion-video9 fashion-video10 fashion-video11'
+	'fashion-video12 fashion-video13 fashion-video14'
+}
+
+
+.add-banner{
+	margin-left: -45px;
+}
+.footer{
+
+	margin-left: -40px;
+	grid-template-columns: 6fr 1fr 1fr 2fr;
+	grid-template-rows: 1fr 4fr 1fr;
+}
+.footer-info
+{
+	grid-area: footer-info;
+/*	border: 1px solid white;*/
+/*	color: white;*/
+	padding: 15px;
+	padding-right: 60px;
+	line-height: 25px;
+}
+
+@media(max-width:700px)
+{
+	.heading{grid-template-columns: 4fr 6fr;}
+	.nav-container{grid-template-columns: 0fr 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr 5fr;}
+	.featured-img1 .img1-info{width: 100%;margin-left: 0;text-align: center;}
+	.featured-img2 .img2-info{width: 100%;margin-left: 0;text-align: center;}
+	.featured-img3 .img3-info{width: 100%;margin-left: 0;text-align: center;}
+	.featured-img4 .img4-info{width: 100%;margin-left: 0;text-align: center;}
+	.sub-nav{margin: 55px auto;}
+	.blank {margin: 10px auto;height: 50px}
+
+	.travel-video
+	{
+		height: 750px;
+		width: 95%;
+	grid-template-rows: 250px 200px 280px ;
+	grid-template-columns: 2fr 1fr;
+	grid-template-areas: 
+	'video1 video2'
+	'video1 video3'
+	'video4 video5'
+	}
+	.video1 .video1-info
+	{
+		text-align: center;
+		margin-top: 380px;
+	}
+	.video4 .video4-info
+	{
+		width: 100%;
+		text-align: center;
+	}
+	.blank2{width: 90%;margin: auto;}
+
+	.fashion-video
+{
+
+	width: 95%;
+	margin: 20px auto;
+	margin-left: 5px;
+	display: grid; 
+	grid-template-rows: 0.5fr 1fr 1fr 1fr 2.5fr 2.5fr 2.5fr;
+	grid-template-columns: 2fr 2fr 3fr;
+	grid-gap: 3px;
+	grid-template-areas:  
+	'fashion-text1 fashion-text2 fashion-text3'
+	'fashion-video1 fashion-video2 fashion-video3'
+	'fashion-video1 fashion-video2 fashion-video4'
+	'fashion-video1 fashion-video2 fashion-video5'
+	'fashion-video6 fashion-video7 fashion-video8'
+	'fashion-video9 fashion-video10 fashion-video11'
+	'fashion-video12 fashion-video13 fashion-video14'
+
+}
+	.fashion-info1
+	{
+		height: 80px;
+		width: 100%;
+
+	}
+	.fashion-info2
+	{
+		height: 80px;
+		width: 100%;
+	}
+	.fashion-video6 .img6
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info6
+	{
+		width: 100%;
+		text-align: center;
+
+	}
+
+	.fashion-video7 .img7
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info7
+	{
+		width: 100%;
+		text-align: center;
+	}
+	.fashion-video8 .img8
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info8
+	{
+		width: 100%;
+		text-align: center;
+	}
+	.fashion-video9 .img9 
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info9
+	{
+		width: 100%;
+		text-align: center;
+	}
+	.fashion-video10 .img10 
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info10
+	{
+		width: 100%;
+		text-align: center;
+	}
+	.fashion-video11 .img11 
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info11
+	{
+		width: 100%;
+		text-align: center;
+	}
+	.fashion-video12 .img12  
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info12
+	{
+		width: 100%;
+		text-align: center;
+	}
+	.fashion-video13 .img13 
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info13
+	{
+		width: 100%;
+		text-align: center;
+	}
+	.fashion-video14 .img14
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info14
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+	.add-banner
+	{
+		width: 95%;
+		height: 200px;
+	}
+
+
+	.footer
+	{
+	height: 720px;
+	width: 100%;
+	padding: 50px;
+	background: #212529;
+	margin-top: 10px;
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: 5fr 3.5fr;
+	grid-template-rows: 1fr 4fr 1fr 1fr 2fr 3fr;
+	grid-template-areas: 
+	'logo-footer footer-link'
+	'footer-info footer-linklist'
+	'footer-social footer-linklist '
+	'footer-about footer-video'
+	'footer-aboutlist footer-videolist'
+	'footer-aboutlist footer-videolist';
+	}
+.footer-linklist
+{
+	text-align: center;
+}
+.footer-aboutlist
+{
+	text-align: center;
+}
+}
+
+
+
+
+@media(max-width:500px)
+{
+	.heading
+	{
+		height: 200px;
+		grid-template-areas: 
+		'logo logo'
+		'bigadd bigadd';
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	.nav-container
+	{
+		width: 100%;
+		height: 160px;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 0fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: 
+		'box home menu1 menu2 menu3 menu4 menu5'
+		'search search search search search search search';
+	}
+	.featured
+	{
+		height: 1020px;
+		grid-template-columns: 2fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-areas: 
+		'img1'
+		'img2'
+		'img3'
+		'img4';
+	}
+	.sub-nav
+	{
+	height: 100px;
+	width: 90%;
+	}
+	.travel-video
+	{
+		grid-template-rows: 2fr 1fr 1fr;
+	grid-template-columns: 2.5fr 2.5fr;
+	grid-template-areas: 
+	'video1 video1'
+	'video2 video3'
+	'video4 video5'
+	}
+.blank2
+{
+	width: 90%;
+	margin-top: 250px;
+}
+
+
+	.fashion-video
+{
+	height: 1700px;
+	width: 98%;
+/*	margin: 20px auto;*/
+	margin-left: 3px;
+	display: grid; 
+	grid-template-rows: 0.5fr 4fr 3fr 0.5fr 2fr 2fr 0.5fr 2fr 2fr;
+	grid-template-columns: 2fr 2fr 2fr;
+	grid-gap: 3px;
+
+	grid-template-areas:  
+	'fashion-text1 fashion-text1 fashion-text1'
+	'fashion-video1 fashion-video2 fashion-video3'
+	'fashion-video4 fashion-video5 fashion-video6'
+	
+	'fashion-text2 fashion-text2 fashion-text2'
+	'fashion-video7 fashion-video8 fashion-video8'
+	'fashion-video9 fashion-video10 fashion-video10'
+
+	'fashion-text3 fashion-text3 fashion-text3'
+	'fashion-video11 fashion-video12 fashion-video12'
+	'fashion-video13 fashion-video14 fashion-video14';
+
+}
+
+	.fashion-info1
+	{
+		height: 160px;
+		width: 100%;
+		margin-top: 0;
+	}
+	.fashion-info2
+	{
+		height: 80px;
+		width: 100%;
+		margin-top: 0;
+		text-align: center;
+	}
+	.fashion-video3 .img3 
+	{
+	height:70%;
+	width: 100%;
+	}
+
+	.fashion-info3
+	{
+	margin-top: 0;
+	width: 100%;
+	text-align: center;
+
+	}
+
+	.fashion-video4 .img4
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info4
+	{
+		margin-top: 0;
+		width: 100%;
+		text-align: center;
+	}
+	.fashion-video5 .img5
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info5
+	{
+		margin-top: 0;
+		width: 100%;
+		text-align: center;
+	}
+	.fashion-text1
+	{
+		text-align: center;
+		line-height: 50px;
+	}
+	.fashion-text2
+	{
+		text-align: center;
+		line-height: 50px;
+	}
+	.fashion-text3
+	{
+		margin-top: 15px;
+		text-align: center;
+		line-height: 50px;
+	}
+	.fashion-video6 .img6
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info6
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+	.fashion-video7 .img7
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info7
+	{
+		width: 100%;
+		text-align: center;
+		margin-top: -5px;
+	}
+	.fashion-video8  .img8
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info8
+	{
+		width: 100%;
+		text-align: center;
+	}
+	.fashion-video9 .img9
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info9
+	{
+		width: 100%;
+		text-align: center;
+	}
+	.fashion-video10  .img10
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info10
+	{
+		width: 100%;
+		text-align: center;
+	}
+	.fashion-video11  .img11
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info11
+	{
+		width: 100%;
+		text-align: center;
+	}
+	.fashion-video12 .img12 
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info12
+	{
+		width: 100%;
+		text-align: center;
+	}
+	.fashion-video13 .img13 
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info13
+	{
+		width: 100%;
+		text-align: center;
+	}
+	.fashion-video14 .img14
+	{
+		height: 150px;
+		width: 100%;
+	}
+	.fashion-info14
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+	.footer
+	{
+	height: 1000px;
+	width: 110%;
+/*	padding: 50px;*/
+	background: #212529;
+	margin-top: 10px;
+	display: grid;
+	grid-gap: 3px;
+	grid-template-columns: 3fr 5fr;
+	grid-template-rows: 1fr 3fr 1fr 1fr 2fr 2fr;
+	grid-template-areas: 
+	'logo-footer footer-link'
+	'footer-info footer-linklist'
+	'footer-social footer-social'
+	'footer-about footer-video'
+	'footer-aboutlist footer-videolist'
+	'footer-aboutlist footer-videolist';
+	}
+
+
+
+}

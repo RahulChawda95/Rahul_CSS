@@ -1,0 +1,110 @@
+*{box-sizing: border-box;}
+
+
+@media(max-width: 1100px)
+{
+	.main-container .slider {height: 600px}
+	.st-logo{margin-top: -500px}
+	.slider-info{margin-top: 150px}
+	.nav-container{margin-top: -120px;margin-left: -830px;height: 600px}
+	.menu1 .menu-header{height: 150px; text-align: justify;margin-left: 5px}
+	.menu-icon{margin-top: -90px; margin-left: 830px;}
+	.menu-container .menu-left,.menu-right{margin: 15px auto;}
+	.main-booktable2 .booktable{width: 80%; height: 170px; text-align: center;}
+	.people-say .People1,.People2,.People3{height: 300px;width: 275px; margin: 25px 10px;}
+}
+
+
+
+@media(max-width: 900px)
+{
+	.st-logo{display: none;}
+	.slider{height: 480px;}
+	.main-container .slider-info {height: 380px;width: 650px; padding-right: 200px; margin-left: 25px; text-align: left;}
+	.slider-info{margin: 0;}
+	.slider-info h1{ line-height: 75px;}
+	.slider-info p { padding-top: 0px; color: black; font-size: 20px;}
+	.slider-info button{margin-left: 300px; margin-top: -80px; background: black; color: white;}
+	button .view-menu{background: #17202A;}
+	
+
+
+
+
+	.menu-icon  { height: 550; margin-top: -380px; margin-left: 800px;}
+	.menu1 .menu-header{height: 190px;width: 90%; margin-left: 0px;}
+	.main-booktable2 .booktable{width: 80%; height: 180px; text-align: center;}
+
+	.menu3{margin-top: 100%;}
+	.people-say .People1{width: 70%;margin-left: 50px;}
+	.people-say .People2{ width: 70%;margin-left: 50px;}
+	.people-say .People3{ width: 70%;margin-left: 50px;}
+	.footer .footer-box1,.footer-box2,.footer-box3{width: 50%; margin: auto;}
+	.footer .footer-box4{width: 50%;margin: 5px auto;}
+}
+@media (max-width: 700px)
+{
+	.main-container .slider-info {margin-left: 20px; text-align: left; margin-top: 10px}
+	.menu1 .menu-header{width: 100%;  text-align:left;margin-left: 5px}
+	.menu-icon{margin-top: -350px; margin-left: 475px;}
+	.nav-container{margin-top: -70px;margin-left: -475px}
+	.slider-info button{top: 80px;left: -150px}
+	.menu-container .menu-left,.menu-right{width: 100%;}
+	.background1 .booktable{width: 100%; text-align: left;}
+	.button{margin-left: 200px;}
+	.booktable{text-align: left; margin-left: 10px;}
+	.people-say{margin:auto;width: 120%}	
+	.People1{ width: 350px; }
+	.People2{ width: 80%; }
+	.People3{ width: 60%; }
+	.menu3{margin-top: 130%;}
+	.footer .footer-box1,.footer-box2,.footer-box3{width: 75%; margin: auto;}
+	.logo-footer{margin: auto;}
+	.footer-social{margin: auto;}
+	.footer-box4{text-align: left;padding: 10px}
+}
+
+
+
+@media(max-width:500px)
+{
+	.main-container .slider-info {height:450px;width:95%;margin-left: 10px; text-align: left; margin-top: 10px}
+	.slider-info p{text-align: center;}
+
+	.menu1 .menu-header{width: 100%;  text-align:left;margin-left: 5px}
+	.menu-icon{margin-top: -350px; margin-left: 500px;}
+	.fa-bars{margin-left: 60px}
+	.nav-container{margin-top: -40px;margin-left: -390px;width: 450px}
+	.navbar{margin-left: 75px}
+	.slider-info{width: 500px;}
+	.slider-info p{height: 180px;width:340px;padding-right: 100px}
+	.slider-info button{top: 50px;left: -200px}
+	.menu-icon{margin-top: -450px;margin-left: 330px}
+	.menu-container .menu-left,.menu-right{height: 450px;width: 450px;}
+	.menu-container .menu-left .item1{margin: 0px}
+	.menu-container .menu-left .item2{margin: 50px;margin-left: 0px}
+	.menu-container .menu-left .item3{margin: 50px;margin-left: 0px}
+	.menu-container .menu-left .item4{margin: 50px;margin-left: 0px}
+	.menu-container .menu-left .item-info{margin: 0px;height: 50px;width: 350px}
+
+
+	.menu-container .menu-right .item1{margin: 0px}
+	.menu-container .menu-right .item2{margin: 50px;margin-left: 0px}
+	.menu-container .menu-right .item3{margin: 50px;margin-left: 0px}
+	.menu-container .menu-right .item4{margin: 50px;margin-left: 0px}
+	.menu-container .menu-right .item-info{margin: 0px;height: 50px;width: 350px}
+	.fa-bars{display: none}
+
+	.menu1 .menu-header{height: 280px;margin-left: 5px}
+	.background1 .booktable{width: 100%; text-align: left;}
+	.button{margin-left: 150px;margin-top: -350px}
+
+	.booktable{text-align: left;margin-left: -5px;height: 600px}
+
+	.people-say{width:100%;margin-top: 200px;margin-left: 0px}	
+	.menu3{margin-top: 190%;}
+	.footer .footer-box1,.footer-box2,.footer-box3{width: 75%; margin: auto;margin-top: 15px}
+	.logo-footer{margin: auto;width: 300px}
+	.footer-social{margin: auto;width: 300px}
+	.footer-box4{height: 55px;width: 250px;margin: 0;text-align: center;}
+}
